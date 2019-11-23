@@ -34,7 +34,7 @@ class LogInTest(TestCase):
         self.assertTrue(response.status_code == 200)
 
 
-    def test_daily_commute_with_token_should_give_401(self):
+    def test_daily_commute_without_token_should_give_401(self):
         token=''
         response = self.client.get('/dailycommute/v1/', HTTP_AUTHORIZATION='Token {}'.format(token))
         self.assertTrue(response.status_code == 401)
