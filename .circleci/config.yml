@@ -25,8 +25,8 @@ jobs: # A basic unit of work in a run
           command: |
             python3 -m venv venv && . venv/bin/activate
             pip install -r requirements.txt
-            python backend/manage.py makemigrations
-            python backend/manage.py migrate
+            python manage.py makemigrations
+            python manage.py migrate
       - save_cache: # cache Python dependencies using checksum of Pipfile as the cache-key
           key: deps9-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
@@ -37,7 +37,7 @@ jobs: # A basic unit of work in a run
           name: Running tests
           command: |
             . venv/bin/activate
-            python backend/manage.py test
+            python manage.py test
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
