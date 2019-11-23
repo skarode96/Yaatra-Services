@@ -15,11 +15,13 @@ class LogInTest(TestCase):
         credentials = {}
         res = self.client.post('/login/v1/', credentials)
         self.assertTrue(res.status_code == 400)
+        self.assertEqual(res.data['error'], 'Either Username or Password is missing!')
 
     def test_should_throw_404_username_password_doesnt_exist(self):
         credentials = {'username':randomString(), 'password': randomString()}
         res = self.client.post('/login/v1/', credentials)
         self.assertTrue(res.status_code == 404)
+        self.assertEqual(res.data['error'], 'User Not Found, Invalid Credentials')
 
     def test_daily_commute_with_token_should_give_200(self):
         username = randomString()
@@ -36,5 +38,7 @@ class LogInTest(TestCase):
 
     def test_daily_commute_without_token_should_give_401(self):
         token=''
-        response = self.client.get('/dailycommute/v1/', HTTP_AUTHORIZATION='Token {}'.format(token))
+        response = self.client.get('/dailycommute/v1/')
         self.assertTrue(response.status_code == 401)
+        self.assertEqual(response.data['detail'], "Authentication credentials were not provided.")
+
