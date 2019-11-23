@@ -1,40 +1,40 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from rest_framework.test import APIClient
-from rest_framework.authtoken.models import Token
-from rest_framework.test import APITestCase
 
+import random
+import string
+
+def randomString(stringLength=10):
+    """Generate a random string of fixed length """
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for i in range(stringLength))
 
 class LogInTest(TestCase):
 
-    def test_daily_commute_with_token(self):
+    def test_should_throw_400_username_password_missing(self):
+        credentials = {}
+        res = self.client.post('/login/v1/', credentials)
+        self.assertTrue(res.status_code == 400)
 
-        '''
-        Testcase: To check access to Daily Commute Recommender API  endpoint with Authentication Token
-        '''
+    def test_should_throw_404_username_password_doesnt_exist(self):
+        credentials = {'username':randomString(), 'password': randomString()}
+        res = self.client.post('/login/v1/', credentials)
+        self.assertTrue(res.status_code == 404)
 
-        username = 'test'
-        password = 'qwerty12340'
+    def test_daily_commute_with_token_should_give_200(self):
+        username = randomString()
+        password = randomString()
         user = User.objects.create_user(username)
         user.set_password(password)
         user.save()
-
         credentials = {'username': username, 'password': password}
-
         response = self.client.post('/login/v1/', credentials)
         token = response.data['token']
-        self.assertTrue(response.status_code == 200, 'Login, API Testing: Failure')
-
         response = self.client.get('/dailycommute/v1/', HTTP_AUTHORIZATION='Token {}'.format(token))
-        self.assertTrue(response.status_code == 200, 'Daily Commute, API Testing: Failure')
+        self.assertTrue(response.status_code == 200)
 
-'''
-    def test_daily_commute_without_token(self):
-    
-        
-        #Testcase: To check access to Daily Commute Recommender API endpoint without Authentication Token
-        
-        response = self.client.get('/dailycommute/v1/')
-        print("API Response: ", response.data['detail'])
-        self.assertTrue(response.status_code == 200, 'Daily Commute, API Testing: Failure')
-'''
+
+    def test_daily_commute_with_token_should_give_401(self):
+        token=''
+        response = self.client.get('/dailycommute/v1/', HTTP_AUTHORIZATION='Token {}'.format(token))
+        self.assertTrue(response.status_code == 401)
