@@ -11,6 +11,7 @@ from rest_framework.status import (
     HTTP_200_OK
 )
 from rest_framework.response import Response
+from django.shortcuts import render
 
 
 @csrf_exempt
@@ -53,3 +54,6 @@ def daily_commute_recommender(request):
             'Destination': 'Trinity College Dublin, College Green'}, ]
 
     return Response(data, status=HTTP_200_OK)
+
+def index(request):
+    return render(request, 'index.html')
