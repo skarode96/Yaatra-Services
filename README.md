@@ -2,7 +2,4 @@
 [![CircleCI](https://circleci.com/gh/skarode96/yaatra-services/tree/master.svg?style=svg)](https://circleci.com/gh/skarode96/yaatra-services/tree/master)
 
 Contributors: 
-Srijan Roy
-Rohan bagwe
-Chetan Prasad
-
+## Rohan Bagwe TCD 19314431
