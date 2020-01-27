@@ -11,3 +11,4 @@ venv.bak/
 nohup.out
 service/settings.py
 service/settings_prod.py
+API/__pycache__/
