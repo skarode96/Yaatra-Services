@@ -103,22 +103,24 @@ def view_daily_commute_list(request):
     This view should return the list of all daily commutes that user have configured.
     return: should return jouney_id (pk) of each list item of DailyCommute Model to be used by daily_commute_user_list view
     to fetch the list of user for a particular daily commute journey.
-
+    """
     data = [
         {
             'jouney_id': 123,
+            'title': 'Ghatkopar',
             'Source': 'Dublin 8, Cork Street',
             'Destination': 'Trinity College Dublin, College Green'},
         {
             'jouney_id': 124,
+            'title': 'Ghatkopar',
             'Source': 'Dublin 8, Cork Street',
             'Destination': 'Spar, College Green'},
         {
             'jouney_id': 125,
+            'title': 'Ghatkopar',
             'Source': 'Dublin 8, Cork Street',
             'Destination': 'Trinity College Dublin, College Green'}, ]
-    """
-    data = ['testing']
+
     return Response(data, status=HTTP_200_OK)
 
 
