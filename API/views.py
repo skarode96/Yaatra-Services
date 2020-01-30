@@ -37,10 +37,10 @@ def user_login(request):
                              'response': 'Error'},
                             status=HTTP_404_NOT_FOUND)
 
-        token, _ = Token.objects.get_or_create(user=user)
+        auth_token, _ = Token.objects.get_or_create(user=user)
         return Response({'message': 'Login Successful!',
                          'response': 'Success',
-                         'auth_token': token.key},
+                         'authToken': auth_token.key},
                         status=HTTP_200_OK)
     else:
         return Response({'message': 'Use Post Request!',
@@ -88,8 +88,8 @@ def user_registration(request):
                                      fields=['first_name', 'last_name', 'username', 'age', 'gender', 'email'])
             userData['message'] = 'User Registration Successful!'
             userData['response'] = 'Success'
-            token = Token.objects.create(user=userDetails)
-            userData['auth_token'] = token.key
+            auth_token = Token.objects.create(user=userDetails)
+            userData['authToken'] = auth_token.key
         else:
             userData = serializer.errors
         return Response(userData, status=HTTP_201_CREATED)
@@ -159,7 +159,7 @@ def view_daily_commute_user_list(request):
 
 @ratelimit.decorators.ratelimit(key='ip', rate='50/m')
 @csrf_exempt
-@api_view(["GET"])
+@api_view(["POST"])
 def create_daily_commute(request):
     """
     Input: Journey Details: longitude, latitude, start_time
@@ -170,7 +170,7 @@ def create_daily_commute(request):
 
 @ratelimit.decorators.ratelimit(key='ip', rate='50/m')
 @csrf_exempt
-@api_view(["GET"])
+@api_view(["DELETE"])
 def delete_daily_commute(request):
     """
     Input: Journey Details: journey_id
