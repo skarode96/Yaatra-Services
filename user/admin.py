@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import User, DailyCommute
+from user.models import User
 
 
 class CustomUserAdmin(UserAdmin):
@@ -14,15 +14,4 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = ()
 
 
-class CustomDailyCommute(admin.ModelAdmin):
-    list_display = (
-        'user', 'journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long',
-        'start_time', 'created_on')
-    search_fields = ('journey_title',)
-    filter_horizontal = ()
-    list_filter = ()
-    fieldsets = ()
-
-
 admin.site.register(User, CustomUserAdmin)
-admin.site.register(DailyCommute, CustomDailyCommute)

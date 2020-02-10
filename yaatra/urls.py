@@ -1,7 +1,7 @@
-"""service URL Configuration
+"""yaatra URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+    https://docs.djangoproject.com/en/2.0/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework_swagger.views import get_swagger_view
 
+schema_view = get_swagger_view(title='API docs')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('backend/', include('API.urls'))
+    path('user/', include('user.urls')),
+    path('journey/', include('daily_commute.urls')),
+    path('docs/', schema_view),
 ]

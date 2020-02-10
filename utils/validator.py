@@ -1,4 +1,4 @@
-from API.models import User
+from user.models import User
 
 
 def validate_email(email):
@@ -9,7 +9,7 @@ def validate_email(email):
 
 
 def validate_username(username):
-    if User.objects.filter(email=username).exists():
+    if User.objects.filter(username=username).exists():
         return username
     else:
         return None

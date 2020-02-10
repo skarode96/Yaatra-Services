@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from rest_framework import serializers, viewsets
 from rest_framework.permissions import AllowAny
 from .models import User
 
@@ -24,3 +24,4 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         userDetails.set_password(password)
         userDetails.save()
         return userDetails
+
