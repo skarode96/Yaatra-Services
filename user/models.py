@@ -1,26 +1,27 @@
+from django.contrib.auth.base_user import BaseUserManager, AbstractBaseUser
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-from django.conf import settings
 
 
 class CustomUserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, email, username, first_name, last_name, age, gender, password):
+    def create_user(self, email, username, first_name, last_name, age, gender, password, pref_mode_travel, pref_gender):
         user = self.model(
             email=self.normalize_email(email),
             username=username,
             first_name=first_name,
             last_name=last_name,
             age=age,
-            gender=gender
+            gender=gender,
+            pref_gender=pref_gender,
+            pref_mode_travel=pref_mode_travel,
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password, first_name, last_name, age, gender):
+    def create_superuser(self, email, username, password, first_name, last_name, age, gender, pref_mode_travel, pref_gender):
         user = self.create_user(
             email=self.normalize_email(email),
             password=password,
@@ -28,7 +29,9 @@ class CustomUserManager(BaseUserManager):
             first_name=first_name,
             last_name=last_name,
             age=age,
-            gender=gender
+            gender=gender,
+            pref_gender=pref_gender,
+            pref_mode_travel=pref_mode_travel,
         )
         user.is_admin = True
         user.is_staff = True
@@ -44,6 +47,11 @@ class User(AbstractBaseUser):
     email = models.EmailField(unique=True)
     age = models.IntegerField()
     gender = models.CharField(max_length=1)
+
+    pref_gender = models.IntegerField()
+    pref_mode_travel = models.IntegerField()
+    rating = models.FloatField(default=None, null=True)
+
     created_on = models.DateTimeField(verbose_name='Sign Up Date', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='Last Login', auto_now=True)
 
@@ -52,7 +60,7 @@ class User(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 
-    REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'gender', 'age']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'gender', 'age', 'pref_gender', 'pref_mode_travel']
     USERNAME_FIELD = 'username'
 
     objects = CustomUserManager()
@@ -65,19 +73,3 @@ class User(AbstractBaseUser):
 
     def has_perm(self, perm, obj=None):
         return self.is_admin
-
-
-class DailyCommute(models.Model):
-    journey_title = models.CharField(max_length=30)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    source_long = models.DecimalField(max_digits=9, decimal_places=6)
-    source_lat = models.DecimalField(max_digits=9, decimal_places=6)
-    destination_long = models.DecimalField(max_digits=9, decimal_places=6)
-    destination_lat = models.DecimalField(max_digits=9, decimal_places=6)
-    start_time = models.DateTimeField(verbose_name=' Journey Start Time')
-    created_on = models.DateTimeField(verbose_name='Creation Date', auto_now_add=True)
-
-    REQUIRED_FIELDS = ['journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time']
-
-    def __str__(self):
-        return self.journey_title

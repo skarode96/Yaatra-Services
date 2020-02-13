@@ -1,41 +1,43 @@
 # yaatra-services
 [![CircleCI](https://circleci.com/gh/skarode96/yaatra-services/tree/master.svg?style=svg)](https://circleci.com/gh/skarode96/yaatra-services/tree/master)
 
-# Contributors: 
-### Rohan Bagwe TCD 19314431 :P
+### Python Service
 
--- User Registration and Login
+#### 1. Installing all dependencies
+`pip install -r requirements.txt`
 
-[PUT]
+#### 2. Starting the server
+`python manage.py runserver`
 
-### Login API Endpoint
+#### 3. Running the tests
+`coverage run  manage.py test`
 
-username: test
-password: qwerty12340
+`coverage report -m`
 
-{
-    "message": "Login Successful!",
-    "response": "Success",
-    "auth_token": "23b7476b1fe62569803454178a742b6f2a686d07"
-}
+`coverage html`
 
-[PUT]
+### Postgres setup
 
-### Reigsteration API Endpoint
+#### 1. Download Dbeaver and create database 'yaatra'
 
-username:
-password:
-gender: (M/F/O)
-age:
-confirm_password:
-email:
-first_name:
-last_name:
+#### 2. Start Postgres and run the following commands.
 
-Use below for accessing Commute API
+`psql postgres`
 
-Token 23b7476b1fe62569803454178a742b6f2a686d07
+#### 3. Create user 'ase' and grant privileges.
 
--- daily commute API Endpoints
+`create user ase with password 'ase';`
 
-To implement BL (Model and Table Structure created)
+`alter role ase set client_encoding to 'utf8';`
+
+`alter role ase set default_transaction_isolation to 'read committed';`
+
+`grant all privileges on database yaatra to ase`
+
+#### 4. List all databases
+
+`\l` 
+
+#### 5. In the project folder run the following command
+
+`python manage.py makemigrations`
