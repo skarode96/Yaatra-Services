@@ -11,13 +11,17 @@ from rest_framework.status import (
     HTTP_201_CREATED
 )
 import ratelimit.decorators
+from .models import DailyCommute
+from .serializers import DailyCommuteSerializer
+import logging
+import socket
+from django.forms.models import model_to_dict
 
 
 @ratelimit.decorators.ratelimit(key='ip', rate='200/h')
 @csrf_exempt
 @api_view(["GET"])
-@permission_classes((AllowAny,))
-def view_daily_commute_list(request, journey_id):
+def view_daily_commute_list(request):
     """
     This view should return the list of all daily commutes that user have configured.
     return: should return jouney_id (pk) of each list item of DailyCommute Model to be used by daily_commute_user_list view
@@ -87,9 +91,25 @@ def create_daily_commute(request):
     """
     Input: Journey Details: longitude, latitude, start_time
     """
-    data = []
-    return Response(data, status=HTTP_200_OK)
+    if request.method == 'POST':
 
+        if request.data.get('journey_title') is None or request.data.get('destination_lat') is None or \
+                request.data.get('start_time') is None or request.data.get('journey_frequency') is None:
+            return Response({'message': 'Form Data is missing!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+
+        serializer = DailyCommuteSerializer(data=request.data)
+
+        if serializer.is_valid():
+            dailyCommuteDetails = serializer.save()
+            dailyCommuteData = model_to_dict(dailyCommuteDetails,
+                                 fields=['journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time', 'journey_frequency'])
+            dailyCommuteData['message'] = 'User Registration Successful!'
+            dailyCommuteData['response'] = 'Success'
+        else:
+            userData = serializer.errors
+        return Response(userData, status=HTTP_201_CREATED)
 
 @ratelimit.decorators.ratelimit(key='ip', rate='50/m')
 @csrf_exempt
