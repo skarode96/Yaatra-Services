@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn service.wsgi --log-file -
+web: gunicorn yaatra.wsgi --log-file -
