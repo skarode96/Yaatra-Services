@@ -1,3 +1,6 @@
+import logging
+import socket
+
 from django.contrib.auth import authenticate
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.models import Token
@@ -23,6 +26,10 @@ from utils.validator import validate_email, validate_username, validate_password
 @api_view(["POST"])
 @permission_classes((AllowAny,))
 def user_login(request):
+    host_name = socket.gethostname()
+    machine_ip = socket.gethostbyname(host_name)
+    logger = logging.getLogger()
+    logger.info("Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
     if request.method == 'POST':
 
         if request.data.get("username") is None or request.data.get("password") is None:
@@ -92,7 +99,7 @@ def user_registration(request):
         if serializer.is_valid():
             userDetails = serializer.save()
             userData = model_to_dict(userDetails,
-                                     fields=['first_name', 'last_name', 'username', 'age', 'gender', 'email'])
+                                     fields=['first_name', 'last_name', 'username', 'age', 'gender', 'email', 'pref_mode_travel', 'pref_gender'])
             userData['message'] = 'User Registration Successful!'
             userData['response'] = 'Success'
             auth_token = Token.objects.create(user=userDetails)

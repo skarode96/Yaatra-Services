@@ -21,6 +21,6 @@ schema_view = get_swagger_view(title='API docs')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('user.urls')),
-    path('journey/', include('daily_commute.urls')),
+    path('commute/', include('daily_commute.urls')),
     path('docs/', schema_view),
 ]

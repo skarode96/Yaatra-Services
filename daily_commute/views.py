@@ -17,7 +17,7 @@ import ratelimit.decorators
 @csrf_exempt
 @api_view(["GET"])
 @permission_classes((AllowAny,))
-def view_daily_commute_list(request):
+def view_daily_commute_list(request, journey_id):
     """
     This view should return the list of all daily commutes that user have configured.
     return: should return jouney_id (pk) of each list item of DailyCommute Model to be used by daily_commute_user_list view

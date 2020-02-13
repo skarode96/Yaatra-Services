@@ -5,21 +5,23 @@ from django.db import models
 class CustomUserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, email, username, first_name, last_name, age, gender, password):
+    def create_user(self, email, username, first_name, last_name, age, gender, password, pref_mode_travel, pref_gender):
         user = self.model(
             email=self.normalize_email(email),
             username=username,
             first_name=first_name,
             last_name=last_name,
             age=age,
-            gender=gender
+            gender=gender,
+            pref_gender=pref_gender,
+            pref_mode_travel=pref_mode_travel,
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password, first_name, last_name, age, gender):
+    def create_superuser(self, email, username, password, first_name, last_name, age, gender, pref_mode_travel, pref_gender):
         user = self.create_user(
             email=self.normalize_email(email),
             password=password,
@@ -27,7 +29,9 @@ class CustomUserManager(BaseUserManager):
             first_name=first_name,
             last_name=last_name,
             age=age,
-            gender=gender
+            gender=gender,
+            pref_gender=pref_gender,
+            pref_mode_travel=pref_mode_travel,
         )
         user.is_admin = True
         user.is_staff = True
@@ -43,6 +47,10 @@ class User(AbstractBaseUser):
     email = models.EmailField(unique=True)
     age = models.IntegerField()
     gender = models.CharField(max_length=1)
+
+    pref_gender = models.IntegerField()
+    pref_mode_travel = models.IntegerField()
+
     created_on = models.DateTimeField(verbose_name='Sign Up Date', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='Last Login', auto_now=True)
 
@@ -51,7 +59,7 @@ class User(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 
-    REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'gender', 'age']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'gender', 'age', 'pref_gender', 'pref_mode_travel']
     USERNAME_FIELD = 'username'
 
     objects = CustomUserManager()
