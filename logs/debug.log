@@ -170,3 +170,844 @@ DETAIL:  Failing row contains (4, pbkdf2_sha256$100000$3RztW6XZ4pVc$QklR4AHdvIb5
 
 2020-02-13 15:05:54,810 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
 2020-02-13 15:06:15,274 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:11:06,513 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 16:11:08,369 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:11:08,440 django.request WARNING  Not Found: /user/login/v1/
+2020-02-13 16:11:08,445 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:11:08,448 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:11:08,453 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:11:08,457 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:11:08,461 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:11:08,464 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:11:08,466 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:11:08,468 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,469 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:11:08,470 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:11:08,472 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:11:08,476 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:11:08,480 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:11:08,481 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:11:08,483 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,483 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:11:08,487 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:11:08,489 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,489 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:11:08,490 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:11:08,493 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:11:08,496 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:11:08,499 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,499 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:11:08,501 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:11:08,503 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:11:08,506 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:11:08,509 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:11:08,512 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:11:08,514 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:11:08,520 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:11:08,525 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:11:08,535 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:11:08,538 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,538 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,539 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:11:08,544 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:11:08,547 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,567 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:11:08,573 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:11:08,573 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:11:08,580 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:11:08,580 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:11:08,582 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:11:08,582 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,583 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:11:08,585 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:11:08,585 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:11:08,590 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:11:08,591 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:11:08,592 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:11:08,594 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,595 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:11:08,599 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:11:08,600 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,602 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:11:08,604 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:11:08,604 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:11:08,610 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:11:08,610 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,611 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:11:08,614 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:11:08,614 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:11:08,616 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:11:08,617 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:11:08,618 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:11:08,619 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:11:08,633 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:11:08,634 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:11:08,640 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:11:08,641 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,641 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:11:08,641 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:11:08,648 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:11:08,649 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:25,219 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 16:14:26,146 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:14:26,216 django.request WARNING  Not Found: /user/login/
+2020-02-13 16:14:26,219 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:14:26,222 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:14:26,225 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:14:26,227 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:14:26,229 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:14:26,230 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:14:26,231 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:14:26,243 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,244 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:14:26,246 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:14:26,247 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:14:26,252 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:14:26,254 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:14:26,256 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:14:26,257 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,258 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:14:26,261 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:14:26,262 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,262 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:14:26,263 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:14:26,263 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:14:26,274 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:14:26,275 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,276 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:14:26,279 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:14:26,279 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:14:26,282 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:14:26,283 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:14:26,286 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:14:26,287 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:14:26,297 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:14:26,300 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:14:26,308 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:14:26,311 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,313 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,314 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:14:26,319 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:14:26,320 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,470 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:14:26,560 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:14:26,570 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:14:26,570 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:14:26,573 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:14:26,574 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:14:26,576 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:14:26,577 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,578 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:14:26,580 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:14:26,580 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:14:26,583 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:14:26,584 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:14:26,585 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:14:26,585 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,586 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:14:26,590 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:14:26,591 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,591 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:14:26,592 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:14:26,593 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:14:26,596 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:14:26,597 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,597 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:14:26,600 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:14:26,601 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:14:26,604 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:14:26,604 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:14:26,605 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:14:26,606 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:14:26,616 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:14:26,617 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:14:26,626 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:14:26,626 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,627 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:14:26,627 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:14:26,639 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:14:26,639 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:36,933 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 16:18:38,102 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:18:38,207 django.request WARNING  Not Found: /user/login/
+2020-02-13 16:18:38,210 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:18:38,213 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:18:38,216 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:18:38,218 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:18:38,219 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:18:38,220 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:18:38,221 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:18:38,222 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,222 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:18:38,223 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:18:38,224 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:18:38,228 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:18:38,229 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:18:38,230 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:18:38,231 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,231 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:18:38,234 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:18:38,235 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,235 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:18:38,236 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:18:38,237 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:18:38,242 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:18:38,244 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,244 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:18:38,247 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:18:38,248 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:18:38,296 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:18:38,297 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:18:38,317 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:18:38,318 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:18:38,330 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:18:38,336 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:18:38,353 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:18:38,357 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,357 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,358 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:18:38,365 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:18:38,368 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,481 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:18:38,485 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:18:38,486 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:18:38,490 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:18:38,491 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:18:38,493 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:18:38,494 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,494 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:18:38,496 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:18:38,497 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:18:38,501 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:18:38,502 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:18:38,503 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:18:38,503 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,503 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:18:38,505 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:18:38,506 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,506 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:18:38,507 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:18:38,507 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:18:38,512 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:18:38,513 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,513 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:18:38,515 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:18:38,516 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:18:38,518 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:18:38,519 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:18:38,520 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:18:38,520 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:18:38,526 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:18:38,526 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:18:38,533 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:18:38,534 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,534 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,535 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:18:38,541 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:18:38,541 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:18:38,634 django.request ERROR    Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "rating" violates not-null constraint
+DETAIL:  Failing row contains (2, pbkdf2_sha256$100000$ttm0d07eNPa3$tU2Vm5fNms5LPXv7Btdh3BK+mj+I0I..., bphxzmnvfl, rwyvxlcovq, qvgjjspqms, paulbennett@hotmail.com, 1, y, 2, 8, 2020-02-13 16:18:38.633747+00, 2020-02-13 16:18:38.633773+00, f, t, f, f, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/user/views.py", line 100, in user_registration
+    userDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/user/serializers.py", line 27, in save
+    userDetails.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1128, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "rating" violates not-null constraint
+DETAIL:  Failing row contains (2, pbkdf2_sha256$100000$ttm0d07eNPa3$tU2Vm5fNms5LPXv7Btdh3BK+mj+I0I..., bphxzmnvfl, rwyvxlcovq, qvgjjspqms, paulbennett@hotmail.com, 1, y, 2, 8, 2020-02-13 16:18:38.633747+00, 2020-02-13 16:18:38.633773+00, f, t, f, f, null).
+
+2020-02-13 16:21:29,159 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 16:21:30,260 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:21:30,331 django.request WARNING  Not Found: /user/login/
+2020-02-13 16:21:30,360 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:21:30,365 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:21:30,376 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:21:30,380 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:21:30,384 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:21:30,386 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:21:30,388 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:21:30,390 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,390 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:21:30,392 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:21:30,393 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:21:30,397 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:21:30,399 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:21:30,400 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:21:30,402 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,402 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:21:30,405 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:21:30,407 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,408 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:21:30,409 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:21:30,411 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:21:30,415 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:21:30,417 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,417 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:21:30,420 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:21:30,422 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:21:30,425 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:21:30,428 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:21:30,430 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:21:30,432 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:21:30,439 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:21:30,443 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:21:30,449 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:21:30,453 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,453 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,453 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:21:30,458 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:21:30,460 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,603 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:21:30,695 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:21:30,702 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:21:30,704 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:21:30,707 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:21:30,708 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:21:30,710 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:21:30,711 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,711 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:21:30,714 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:21:30,715 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:21:30,720 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:21:30,721 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:21:30,722 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:21:30,723 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,723 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:21:30,726 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:21:30,726 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,726 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:21:30,727 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:21:30,728 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:21:30,734 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:21:30,735 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,736 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:21:30,738 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:21:30,739 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:21:30,741 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:21:30,741 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:21:30,743 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:21:30,744 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:21:30,756 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:21:30,756 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:21:30,762 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:21:30,763 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,763 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:21:30,763 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:21:30,771 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:21:30,772 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:31,675 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 16:26:33,504 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:26:33,573 django.request WARNING  Not Found: /user/login/
+2020-02-13 16:26:33,576 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:26:33,579 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:26:33,583 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:26:33,587 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:26:33,590 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:26:33,592 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:26:33,595 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:26:33,598 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,598 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:26:33,600 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:26:33,601 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:26:33,605 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:26:33,607 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:26:33,607 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:26:33,609 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,610 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:26:33,614 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:26:33,616 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,617 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:26:33,618 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:26:33,620 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:26:33,624 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:26:33,627 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,627 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:26:33,630 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:26:33,632 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:26:33,635 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:26:33,637 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:26:33,638 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:26:33,640 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:26:33,646 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:26:33,651 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:26:33,657 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:26:33,659 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,659 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,659 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:26:33,665 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:26:33,667 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,812 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:26:33,899 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:26:33,906 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:26:33,907 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:26:33,909 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:26:33,910 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:26:33,911 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:26:33,912 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,912 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:26:33,914 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:26:33,914 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:26:33,919 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:26:33,920 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:26:33,921 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:26:33,921 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,921 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:26:33,923 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:26:33,924 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,924 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:26:33,925 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:26:33,926 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:26:33,929 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:26:33,930 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,930 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:26:33,933 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:26:33,933 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:26:33,935 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:26:33,936 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:26:33,937 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:26:33,939 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:26:33,947 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:26:33,947 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:26:33,956 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:26:33,956 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,956 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:26:33,957 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:26:33,960 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:26:33,960 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:27:26,842 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:27:26,873 django.request ERROR    Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/user/views.py", line 43, in user_login
+    user = authenticate(username=username, password=password)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+2020-02-13 16:44:01,263 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:44:01,285 django.request ERROR    Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/user/views.py", line 43, in user_login
+    user = authenticate(username=username, password=password)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+2020-02-13 16:44:54,175 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:44:54,195 django.request ERROR    Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/user/views.py", line 43, in user_login
+    user = authenticate(username=username, password=password)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+2020-02-13 16:45:27,971 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:45:27,986 django.request ERROR    Internal Server Error: /user/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/user/views.py", line 43, in user_login
+    user = authenticate(username=username, password=password)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column user_user.rating does not exist
+LINE 1: ...r"."pref_gender", "user_user"."pref_mode_travel", "user_user...
+                                                             ^
+
+2020-02-13 16:46:32,422 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:46:59,793 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 16:47:01,562 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:47:01,639 django.request WARNING  Not Found: /user/login/
+2020-02-13 16:47:01,643 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:47:01,645 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:47:01,648 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:47:01,653 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:47:01,655 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:47:01,658 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:47:01,660 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:47:01,662 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,662 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:47:01,664 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:47:01,666 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:47:01,669 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:47:01,671 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:47:01,674 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:47:01,676 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,676 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:47:01,678 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:47:01,680 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,680 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:47:01,681 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:47:01,683 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:47:01,687 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:47:01,689 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,689 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:47:01,691 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:47:01,693 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:47:01,695 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:47:01,697 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:47:01,699 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:47:01,701 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:47:01,706 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:47:01,713 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:47:01,721 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:47:01,724 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,725 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,725 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:47:01,733 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:47:01,735 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:01,920 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 16:47:02,010 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 16:47:02,014 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 16:47:02,015 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 16:47:02,017 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 16:47:02,017 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 16:47:02,019 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 16:47:02,019 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:02,019 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 16:47:02,020 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 16:47:02,021 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 16:47:02,023 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 16:47:02,024 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 16:47:02,024 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 16:47:02,025 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:02,025 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 16:47:02,027 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 16:47:02,028 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:02,028 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 16:47:02,029 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 16:47:02,029 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 16:47:02,034 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 16:47:02,035 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:02,035 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 16:47:02,038 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 16:47:02,038 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 16:47:02,040 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 16:47:02,040 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 16:47:02,041 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 16:47:02,042 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 16:47:02,046 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 16:47:02,047 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 16:47:02,051 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 16:47:02,052 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:02,052 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 16:47:02,052 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 16:47:02,060 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 16:47:02,060 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.

@@ -50,6 +50,7 @@ class User(AbstractBaseUser):
 
     pref_gender = models.IntegerField()
     pref_mode_travel = models.IntegerField()
+    rating = models.FloatField(default=None, null=True)
 
     created_on = models.DateTimeField(verbose_name='Sign Up Date', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='Last Login', auto_now=True)
