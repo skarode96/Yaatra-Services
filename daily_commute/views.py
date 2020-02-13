@@ -11,6 +11,9 @@ from rest_framework.status import (
     HTTP_201_CREATED
 )
 import ratelimit.decorators
+
+from user.models import User
+from utils.validator import validate_email, validate_username
 from .models import DailyCommute
 from .serializers import DailyCommuteSerializer
 import logging
@@ -21,7 +24,7 @@ from django.forms.models import model_to_dict
 @ratelimit.decorators.ratelimit(key='ip', rate='200/h')
 @csrf_exempt
 @api_view(["GET"])
-def view_daily_commute_list(request):
+def get_daily_commutes_for_user(request, user_id):
     """
     This view should return the list of all daily commutes that user have configured.
     return: should return jouney_id (pk) of each list item of DailyCommute Model to be used by daily_commute_user_list view
@@ -29,20 +32,29 @@ def view_daily_commute_list(request):
     """
     data = [
         {
-            'jouney_id': 123,
-            'title': 'Ghatkopar',
-            'Source': 'Dublin 8, Cork Street',
-            'Destination': 'Trinity College Dublin, College Green'},
+            'journey_id': 123,
+            'title': 'office daily',
+            'source_lat': 34.55,
+            'source_long': 35.66,
+            'destination_lat': 67.55,
+            'destination_long': 45.66,
+            'journey_frequency': 1,
+            'pref_gender': 2,
+            'pref_mode_travel': 2
+
+        },
         {
-            'jouney_id': 124,
-            'title': 'Ghatkopar',
-            'Source': 'Dublin 8, Cork Street',
-            'Destination': 'Spar, College Green'},
-        {
-            'jouney_id': 125,
-            'title': 'Ghatkopar',
-            'Source': 'Dublin 8, Cork Street',
-            'Destination': 'Trinity College Dublin, College Green'}, ]
+            'journey_id': 211,
+            'title': 'Gym daily',
+            'source_lat': 34.55,
+            'source_long': 35.66,
+            'destination_lat': 67.55,
+            'destination_long': 45.66,
+            'journey_frequency': 1,
+            'pref_gender': 2,
+            'pref_mode_travel': 2
+        }
+    ]
 
     return Response(data, status=HTTP_200_OK)
 
@@ -51,34 +63,34 @@ def view_daily_commute_list(request):
 @csrf_exempt
 @api_view(["GET"])
 @permission_classes((AllowAny,))
-def view_daily_commute_user_list(request):
+def get_user_list_for_journey(request, journey_id):
     """
         This view should return the list of all daily commuters for the selected jouney_id
         input: journey_id (pk)
         return:  list of users that matched the given journey_id details
         to fetch the list of user for a particular daily commute journey.
-
-        data = [
+    """
+    data = [
             {
-                'first_name': alex,
-                'gender': M
-                'age': 20
-                'Source': 'Dublin 8, Cork Street',
-                'Destination': 'Trinity College Dublin, College Green'},
+                'first_name': 'alex',
+                'gender': 'M',
+                'age': 20,
+                'Source': 23.66,
+                'Destination': 34.66},
             {
-                'first_name': alex,
-                'gender': M
-                'age': 20
-                'Source': 'Dublin 8, Cork Street',
-                'Destination': 'Trinity College Dublin, College Green'},
+                'first_name': 'alex',
+                'gender': 'M',
+                'age': 20,
+                'Source': 23.66,
+                'Destination': 34.66},
             {
-                'first_name': alex,
-                'gender': M
-                'age': 20
-                'Source': 'Dublin 8, Cork Street',
-                'Destination': 'Trinity College Dublin, College Green'},
+                'first_name': 'alex',
+                'gender': 'M',
+                'age': 20,
+                'Source': 23.66,
+                'Destination': 34.66},
         ]
-        """
+
     data = []
     return Response(data, status=HTTP_200_OK)
 
@@ -94,17 +106,24 @@ def create_daily_commute(request):
     if request.method == 'POST':
 
         if request.data.get('journey_title') is None or request.data.get('destination_lat') is None or \
-                request.data.get('start_time') is None or request.data.get('journey_frequency') is None:
+                request.data.get('start_time') is None or request.data.get('journey_frequency') is None or request.data.get('username') is None:
             return Response({'message': 'Form Data is missing!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
+
+        username = request.data.get('username')
+        if validate_username(username) is None:
+            return Response({'message': 'Username does not Exist!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+
 
         serializer = DailyCommuteSerializer(data=request.data)
 
         if serializer.is_valid():
             dailyCommuteDetails = serializer.save()
             dailyCommuteData = model_to_dict(dailyCommuteDetails,
-                                 fields=['journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time', 'journey_frequency'])
+                                 fields=['user_id', 'journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time', 'journey_frequency'])
             dailyCommuteData['message'] = 'User Registration Successful!'
             dailyCommuteData['response'] = 'Success'
         else:

@@ -1862,3 +1862,554 @@ TypeError: view_daily_commute_list() missing 1 required positional argument: 'jo
 2020-02-13 17:46:18,238 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
 2020-02-13 17:46:18,244 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
 2020-02-13 17:46:18,244 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:13,557 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-13 18:13:15,612 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 18:13:15,617 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 18:13:15,621 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 18:13:15,624 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 18:13:15,644 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 18:13:15,647 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 18:13:15,655 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,655 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 18:13:15,659 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 18:13:15,661 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 18:13:15,665 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 18:13:15,668 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 18:13:15,669 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 18:13:15,672 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,672 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 18:13:15,678 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 18:13:15,681 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,682 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 18:13:15,684 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 18:13:15,686 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 18:13:15,693 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 18:13:15,694 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,695 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 18:13:15,703 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 18:13:15,706 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 18:13:15,709 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 18:13:15,711 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 18:13:15,713 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 18:13:15,714 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 18:13:15,720 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 18:13:15,727 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 18:13:15,733 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 18:13:15,736 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,736 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,737 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 18:13:15,748 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 18:13:15,751 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:15,924 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 18:13:16,017 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 18:13:16,100 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 18:13:16,102 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 18:13:16,106 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 18:13:16,106 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 18:13:16,109 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 18:13:16,109 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 18:13:16,111 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 18:13:16,112 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,112 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 18:13:16,114 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 18:13:16,114 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 18:13:16,117 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 18:13:16,118 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 18:13:16,119 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 18:13:16,120 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,120 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 18:13:16,125 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 18:13:16,127 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,128 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 18:13:16,131 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 18:13:16,131 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 18:13:16,136 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 18:13:16,137 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,138 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 18:13:16,142 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 18:13:16,142 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 18:13:16,145 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 18:13:16,145 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 18:13:16,146 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 18:13:16,147 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 18:13:16,159 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 18:13:16,160 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 18:13:16,169 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 18:13:16,170 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,171 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,172 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 18:13:16,186 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 18:13:16,186 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,351 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 18:13:16,435 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-13 18:13:16,440 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-13 18:13:16,440 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-13 18:13:16,442 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-13 18:13:16,443 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-13 18:13:16,444 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-13 18:13:16,444 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,444 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-13 18:13:16,446 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-13 18:13:16,446 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-13 18:13:16,448 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-13 18:13:16,449 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-13 18:13:16,449 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-13 18:13:16,450 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,450 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-13 18:13:16,452 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-13 18:13:16,452 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,453 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-13 18:13:16,454 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-13 18:13:16,454 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-13 18:13:16,458 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-13 18:13:16,459 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,459 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-13 18:13:16,462 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-13 18:13:16,462 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-13 18:13:16,464 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-13 18:13:16,464 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-13 18:13:16,465 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-13 18:13:16,466 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-13 18:13:16,472 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-13 18:13:16,472 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-13 18:13:16,481 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-13 18:13:16,481 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,481 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:13:16,482 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-13 18:13:16,488 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-13 18:13:16,488 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-13 18:14:38,213 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 18:48:45,353 django.request WARNING  Not Found: /commute/daily/123
+2020-02-13 18:48:56,591 django.request WARNING  Not Found: /commute/daily/123
+2020-02-13 18:49:02,614 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 18:50:18,641 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 18:53:02,448 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 18:53:18,298 django.request WARNING  Not Found: /commute/daily/101
+2020-02-13 18:53:51,747 django.request WARNING  Not Found: /commute/daily/101
+2020-02-13 18:54:00,581 django.request WARNING  Not Found: /commute/daily/101
+2020-02-13 18:54:35,869 django.request WARNING  Not Found: /commute/daily/101
+2020-02-13 18:55:15,327 django.request WARNING  Not Found: /commute/daily/101
+2020-02-13 18:55:37,791 django.request WARNING  Not Found: /commute/daily/101/
+2020-02-13 18:55:59,243 django.request WARNING  Not Found: /commute/daily/101/
+2020-02-13 18:59:10,896 django.request WARNING  Not Found: /commute/daily/101/
+2020-02-13 19:02:19,464 django.request ERROR    Internal Server Error: /commute/daily/101/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+TypeError: view_daily_commute_list() got an unexpected keyword argument 'id'
+2020-02-13 19:32:39,472 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 19:33:12,476 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 19:33:40,564 django.request WARNING  Not Found: /commute/daily/
+2020-02-13 19:34:23,051 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 114, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 21, in save
+    pref_travel_mode=self.validated_data['pref_travel_mode'],
+KeyError: 'pref_travel_mode'
+2020-02-13 19:37:19,120 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "source_lat" violates not-null constraint
+DETAIL:  Failing row contains (1, office daily, 23.660000, null, 57.330000, 56.110000, 2020-02-13 15:05:11.621926+00, 2020-02-13 19:37:19.111337+00, null, 2, 1, 1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 114, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 23, in save
+    dailyCommuteDetails.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1128, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "source_lat" violates not-null constraint
+DETAIL:  Failing row contains (1, office daily, 23.660000, null, 57.330000, 56.110000, 2020-02-13 15:05:11.621926+00, 2020-02-13 19:37:19.111337+00, null, 2, 1, 1).
+
+2020-02-13 19:37:38,570 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "source_lat" violates not-null constraint
+DETAIL:  Failing row contains (2, office daily, 23.660000, null, 57.330000, 56.110000, 2020-02-13 15:05:11.621926+00, 2020-02-13 19:37:38.565843+00, null, 2, 1, 1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 114, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 23, in save
+    dailyCommuteDetails.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1128, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "source_lat" violates not-null constraint
+DETAIL:  Failing row contains (2, office daily, 23.660000, null, 57.330000, 56.110000, 2020-02-13 15:05:11.621926+00, 2020-02-13 19:37:38.565843+00, null, 2, 1, 1).
+
+2020-02-13 19:38:23,851 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (3, office daily, 23.660000, 23.890000, 57.330000, 56.110000, 2020-02-13 15:05:11.621926+00, 2020-02-13 19:38:23.847633+00, null, 2, 1, 1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 114, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 24, in save
+    dailyCommuteDetails.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 842, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 880, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1128, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (3, office daily, 23.660000, 23.890000, 57.330000, 56.110000, 2020-02-13 15:05:11.621926+00, 2020-02-13 19:38:23.847633+00, null, 2, 1, 1).
+
+2020-02-13 19:47:55,354 root         INFO     Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-13 19:49:13,271 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 125, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 15, in save
+    user_id=self.validated_data['user_id'],
+KeyError: 'user_id'
+2020-02-13 20:04:40,951 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 124, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 26, in save
+    user = User.objects.get(username=self.validated_data['username'])
+KeyError: 'username'
+2020-02-13 20:09:37,849 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 124, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 26, in save
+    user = User.objects.get(username=self.validated_data['username'])
+KeyError: 'username'
+2020-02-13 20:11:02,846 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 124, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 16, in save
+    username = self.validated_data['username']
+KeyError: 'username'
+2020-02-13 20:11:56,767 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 124, in create_daily_commute
+    dailyCommuteDetails = serializer.save()
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/serializers.py", line 16, in save
+    username = self.data.username
+AttributeError: 'ReturnDict' object has no attribute 'username'
