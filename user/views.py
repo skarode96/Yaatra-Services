@@ -19,17 +19,19 @@ from django.forms.models import model_to_dict
 from user.models import User
 from .serializers import UserRegistrationSerializer
 from utils.validator import validate_email, validate_username, validate_password
+from utils import utility
 
+host_name = socket.gethostname()
+machine_ip = socket.gethostbyname(host_name)
 
 @ratelimit.decorators.ratelimit(key='ip', rate='20/h')
 @csrf_exempt
 @api_view(["POST"])
 @permission_classes((AllowAny,))
 def user_login(request):
-    host_name = socket.gethostname()
-    machine_ip = socket.gethostbyname(host_name)
+
     logger = logging.getLogger()
-    logger.info("Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
+    logger.info("User-Login: Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
     if request.method == 'POST':
 
         if request.data.get("username") is None or request.data.get("password") is None:
@@ -67,6 +69,9 @@ def user_login(request):
 @api_view(["POST"])
 @permission_classes((AllowAny,))
 def user_registration(request):
+
+    logger = logging.getLogger()
+    logger.info("User-Registration: Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
     if request.method == 'POST':
 
         if request.data.get('email') is None or request.data.get('username') is None or \
@@ -99,7 +104,7 @@ def user_registration(request):
         if serializer.is_valid():
             userDetails = serializer.save()
             userData = model_to_dict(userDetails,
-                                     fields=['first_name', 'last_name', 'username', 'age', 'gender', 'email', 'pref_mode_travel', 'pref_gender'])
+                                     fields=['first_name', 'last_name', 'username', 'age', 'gender', 'email', 'pref_mode_travel', 'pref_gender', 'rating'])
             userData['message'] = 'User Registration Successful!'
             userData['response'] = 'Success'
             auth_token = Token.objects.create(user=userDetails)
@@ -108,3 +113,30 @@ def user_registration(request):
             userData = serializer.errors
         return Response(userData, status=HTTP_201_CREATED)
 
+
+@ratelimit.decorators.ratelimit(key='ip', rate='20/h')
+@csrf_exempt
+@api_view(["POST"])
+def update_user_rating(request):
+
+    logger = logging.getLogger()
+    logger.info("User-Rating-Update: Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
+    if request.method == 'POST':
+
+        if request.data.get('username') is None or request.data.get('rating') is None:
+            return Response({'message': 'Username or Rating missing is missing!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+
+        username = request.data.get('username')
+        rating = int(request.data.get('rating'))
+        if validate_username(username) is None:
+            return Response({'message': 'Username Does not Exist!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+        else:
+            new_rating = utility.update_user_rating(username, rating)
+            return Response({'message': 'Rating Updated!',
+                             'rating': new_rating,
+                             'response': 'Success',
+                             }, status=HTTP_200_OK)

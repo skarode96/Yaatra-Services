@@ -5,7 +5,7 @@ from django.db import models
 class CustomUserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, email, username, first_name, last_name, age, gender, password, pref_mode_travel, pref_gender):
+    def create_user(self, email, username, first_name, last_name, age, gender, password, pref_mode_travel, pref_gender, rating=None, total_rating_count=None):
         user = self.model(
             email=self.normalize_email(email),
             username=username,
@@ -13,6 +13,8 @@ class CustomUserManager(BaseUserManager):
             last_name=last_name,
             age=age,
             gender=gender,
+            rating=rating,
+            total_rating_count=total_rating_count,
             pref_gender=pref_gender,
             pref_mode_travel=pref_mode_travel,
         )
@@ -50,7 +52,8 @@ class User(AbstractBaseUser):
 
     pref_gender = models.IntegerField()
     pref_mode_travel = models.IntegerField()
-    rating = models.FloatField(default=None, null=True)
+    rating = models.FloatField(default=0, null=True)
+    total_rating_count = models.IntegerField(default=0, null=True)
 
     created_on = models.DateTimeField(verbose_name='Sign Up Date', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='Last Login', auto_now=True)
