@@ -4130,3 +4130,316 @@ UnboundLocalError: local variable 'userData' referenced before assignment
 2020-02-14 00:19:16,507 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
 2020-02-14 00:19:16,507 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
 2020-02-14 00:19:16,509 root         INFO     User-Registration: Request is being served by Instance: rhofix at IP: 127.0.1.1
+2020-02-17 10:52:49,794 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 10:55:07,383 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 10:57:21,434 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:03:20,647 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:27:42,492 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:43:41,238 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+TypeError: get_daily_commutes_for_user() missing 1 required positional argument: 'username'
+2020-02-17 11:44:06,609 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:46:09,765 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:04:59,814 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:07:13,791 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:09:50,948 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:10:19,268 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:10:37,576 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:10:47,897 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 49, in get_daily_commutes_for_user
+    dailycommutes = DailyCommute.objects.get(user_id=user_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 407, in get
+    (self.model._meta.object_name, num)
+daily_commute.models.MultipleObjectsReturned: get() returned more than one DailyCommute -- it returned 2!
+2020-02-17 12:15:04,829 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:15:20,478 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 49, in get_daily_commutes_for_user
+    dailycommutes = list(DailyCommute.objects.get(user_id=user_id))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 407, in get
+    (self.model._meta.object_name, num)
+daily_commute.models.MultipleObjectsReturned: get() returned more than one DailyCommute -- it returned 2!
+2020-02-17 12:16:25,496 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:16:42,907 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 93, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'list' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 51, in get_daily_commutes_for_user
+    data = serializer.data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 559, in data
+    ret = super().data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 476, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `DailyCommuteSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `list` instance.
+Original exception text was: 'list' object has no attribute 'user'.
+2020-02-17 12:17:36,713 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:18:02,944 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 93, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 51, in get_daily_commutes_for_user
+    data = serializer.data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 559, in data
+    ret = super().data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 476, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `DailyCommuteSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+2020-02-17 12:21:07,289 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:22:44,946 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:25:48,186 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:26:13,767 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:32:57,677 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:46:35,852 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:47:21,995 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:47:54,955 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 13:03:56,692 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 13:03:56,696 django.request ERROR    Internal Server Error: /commute/daily/details/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 77, in get_journey_details
+    if validate_journey(journey_id) is None:
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/utils/validator.py", line 27, in validate_journey
+    if DailyCommute.objects.filter(journey_id=journey_id).exists():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 839, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 857, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'journey_id' into field. Choices are: created_on, destination_lat, destination_long, id, journey_frequency, journey_title, pref_gender, pref_mode_travel, source_lat, source_long, start_time, user, user_id
+2020-02-17 13:04:55,497 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 13:04:55,502 django.request ERROR    Internal Server Error: /commute/daily/details/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 77, in get_journey_details
+    if validate_journey(journey_id) is None:
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/utils/validator.py", line 27, in validate_journey
+    if DailyCommute.objects.filter(journey_id=journey_id).exists():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 839, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 857, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'journey_id' into field. Choices are: created_on, destination_lat, destination_long, id, journey_frequency, journey_title, pref_gender, pref_mode_travel, source_lat, source_long, start_time, user, user_id
+2020-02-17 13:05:59,546 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
