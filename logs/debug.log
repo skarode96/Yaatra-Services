@@ -4130,3 +4130,262 @@ UnboundLocalError: local variable 'userData' referenced before assignment
 2020-02-14 00:19:16,507 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
 2020-02-14 00:19:16,507 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
 2020-02-14 00:19:16,509 root         INFO     User-Registration: Request is being served by Instance: rhofix at IP: 127.0.1.1
+2020-02-20 15:55:40,098 django.request WARNING  Not Found: /
+2020-02-20 15:55:41,191 django.request WARNING  Not Found: /favicon.ico
+2020-02-20 17:55:48,075 root         INFO     User-Login: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 17:56:44,708 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 17:56:44,720 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 135, in create_daily_commute
+    source_long_min, source_long_max = source_long - 0.0039 , source_long + 0.0039
+TypeError: unsupported operand type(s) for -: 'str' and 'float'
+2020-02-20 17:57:31,170 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 17:58:54,268 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 135, in create_daily_commute
+    source_long_min, source_long_max = source_long - 0.0039 , source_long + 0.0039
+TypeError: unsupported operand type(s) for -: 'str' and 'float'
+2020-02-20 18:03:19,392 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:03:44,783 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 136, in create_daily_commute
+    source_long_min, source_long_max = Decimal(source_long) - 0.0039 , Decimal(source_long) + 0.0039
+TypeError: unsupported operand type(s) for -: 'decimal.Decimal' and 'float'
+2020-02-20 18:06:33,509 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:09:21,799 root         INFO     User-Registration: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:09:37,263 root         INFO     User-Login: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:10:45,651 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:11:14,276 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:11:25,762 root         INFO     User-Login: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:11:52,568 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:12:06,053 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:16:18,799 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:18:18,189 root         INFO     User-Login: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:18:36,795 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:22:29,151 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:23:02,049 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\fields.py", line 93, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 148, in create_daily_commute
+    nearby_travellers_data = serializer.data[:]
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\serializers.py", line 559, in data
+    ret = super().data
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\fields.py", line 476, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `DailyCommuteSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+2020-02-20 18:28:39,795 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:31:53,562 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 18:33:24,768 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 150, in create_daily_commute
+    if serializer.is_valid():
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\serializers.py", line 731, in is_valid
+    'Cannot call `.is_valid()` as no `data=` keyword argument was '
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+2020-02-20 19:56:37,474 root         INFO     User-Registration: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 19:57:14,452 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 19:57:47,264 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 165, in create_daily_commute
+    max_journey_id = DailyCommute.objects.aggregate(max('journey_id'))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\query.py", line 358, in aggregate
+    self._validate_values_are_expressions(args + tuple(kwargs.values()), method_name='aggregate')
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\query.py", line 1250, in _validate_values_are_expressions
+    ', '.join(invalid_args),
+TypeError: QuerySet.aggregate() received non-expression(s): y.
+2020-02-20 19:59:20,484 root         INFO     Create-Daily-Commute: Request is being served by Instance: DESKTOP-PG5F6S5 at IP: 10.6.46.169
+2020-02-20 19:59:35,813 django.request ERROR    Internal Server Error: /commute/daily/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ratelimit\decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\macrosoft\Documents\yaatra-services\daily_commute\views.py", line 165, in create_daily_commute
+    max_journey_id = DailyCommute.objects.all().aggregate(max('journey_id'))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\query.py", line 358, in aggregate
+    self._validate_values_are_expressions(args + tuple(kwargs.values()), method_name='aggregate')
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\query.py", line 1250, in _validate_values_are_expressions
+    ', '.join(invalid_args),
+TypeError: QuerySet.aggregate() received non-expression(s): y.
