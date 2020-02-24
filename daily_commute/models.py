@@ -12,7 +12,7 @@ class DailyCommute(models.Model):
     journey_frequency = models.IntegerField()
     pref_gender = models.IntegerField()
     pref_mode_travel = models.IntegerField()
-    journey_id = models.IntegerField()
+    journey_id = models.IntegerField(default="", null=True)
 
     start_time = models.DateTimeField(verbose_name=' Journey Start Time')
     created_on = models.DateTimeField(verbose_name='Creation Date', auto_now_add=True)
