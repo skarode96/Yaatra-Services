@@ -4130,3 +4130,600 @@ UnboundLocalError: local variable 'userData' referenced before assignment
 2020-02-14 00:19:16,507 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
 2020-02-14 00:19:16,507 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
 2020-02-14 00:19:16,509 root         INFO     User-Registration: Request is being served by Instance: rhofix at IP: 127.0.1.1
+2020-02-17 10:52:49,794 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 10:55:07,383 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 10:57:21,434 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:03:20,647 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:27:42,492 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:43:41,238 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+TypeError: get_daily_commutes_for_user() missing 1 required positional argument: 'username'
+2020-02-17 11:44:06,609 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 11:46:09,765 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:04:59,814 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:07:13,791 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:09:50,948 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:10:19,268 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:10:37,576 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:10:47,897 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 49, in get_daily_commutes_for_user
+    dailycommutes = DailyCommute.objects.get(user_id=user_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 407, in get
+    (self.model._meta.object_name, num)
+daily_commute.models.MultipleObjectsReturned: get() returned more than one DailyCommute -- it returned 2!
+2020-02-17 12:15:04,829 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:15:20,478 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 49, in get_daily_commutes_for_user
+    dailycommutes = list(DailyCommute.objects.get(user_id=user_id))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 407, in get
+    (self.model._meta.object_name, num)
+daily_commute.models.MultipleObjectsReturned: get() returned more than one DailyCommute -- it returned 2!
+2020-02-17 12:16:25,496 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:16:42,907 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 93, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'list' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 51, in get_daily_commutes_for_user
+    data = serializer.data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 559, in data
+    ret = super().data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 476, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `DailyCommuteSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `list` instance.
+Original exception text was: 'list' object has no attribute 'user'.
+2020-02-17 12:17:36,713 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:18:02,944 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 93, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 51, in get_daily_commutes_for_user
+    data = serializer.data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 559, in data
+    ret = super().data
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/relations.py", line 185, in get_attribute
+    return super().get_attribute(instance)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/fields.py", line 476, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `DailyCommuteSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+2020-02-17 12:21:07,289 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:22:44,946 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:25:48,186 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:26:13,767 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:32:57,677 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:46:35,852 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:47:21,995 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 12:47:54,955 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 13:03:56,692 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 13:03:56,696 django.request ERROR    Internal Server Error: /commute/daily/details/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 77, in get_journey_details
+    if validate_journey(journey_id) is None:
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/utils/validator.py", line 27, in validate_journey
+    if DailyCommute.objects.filter(journey_id=journey_id).exists():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 839, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 857, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'journey_id' into field. Choices are: created_on, destination_lat, destination_long, id, journey_frequency, journey_title, pref_gender, pref_mode_travel, source_lat, source_long, start_time, user, user_id
+2020-02-17 13:04:55,497 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-17 13:04:55,502 django.request ERROR    Internal Server Error: /commute/daily/details/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 77, in get_journey_details
+    if validate_journey(journey_id) is None:
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/utils/validator.py", line 27, in validate_journey
+    if DailyCommute.objects.filter(journey_id=journey_id).exists():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 839, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 857, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'journey_id' into field. Choices are: created_on, destination_lat, destination_long, id, journey_frequency, journey_title, pref_gender, pref_mode_travel, source_lat, source_long, start_time, user, user_id
+2020-02-17 13:05:59,546 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:22:31,381 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:23:06,264 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:23:13,452 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:23:25,209 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:26:16,323 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:32:43,919 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:40:00,199 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:40:34,906 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:40:55,272 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:41:21,655 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:59:06,736 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:59:16,390 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:28:42,404 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:42:20,366 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:42:43,574 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 54, in get_daily_commutes_for_user
+    journey_id = detail.id
+AttributeError: 'collections.OrderedDict' object has no attribute 'id'
+2020-02-20 12:43:01,584 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:45:47,561 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:47:19,372 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:55:57,889 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:16:57,192 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:17:48,967 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-24 12:17:50,783 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:17:50,858 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:17:50,861 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-24 12:17:50,865 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-24 12:17:50,869 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-24 12:17:50,872 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-24 12:17:50,874 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-24 12:17:50,875 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-24 12:17:50,877 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:50,878 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-24 12:17:50,880 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-24 12:17:50,882 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-24 12:17:50,885 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-24 12:17:50,887 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-24 12:17:50,888 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-24 12:17:50,890 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:50,891 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-24 12:17:50,893 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-24 12:17:50,896 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:50,898 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-24 12:17:50,900 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-24 12:17:50,902 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-24 12:17:50,905 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-24 12:17:50,907 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:50,908 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-24 12:17:50,910 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-24 12:17:50,912 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-24 12:17:50,914 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-24 12:17:50,916 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-24 12:17:50,917 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-24 12:17:50,921 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-24 12:17:50,929 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-24 12:17:50,936 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-24 12:17:50,942 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-24 12:17:50,944 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:50,945 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:50,945 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-24 12:17:50,956 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-24 12:17:50,958 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,104 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:17:51,186 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-24 12:17:51,191 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-24 12:17:51,191 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-24 12:17:51,193 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-24 12:17:51,193 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-24 12:17:51,195 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-24 12:17:51,195 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,196 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-24 12:17:51,198 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-24 12:17:51,199 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-24 12:17:51,202 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-24 12:17:51,202 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-24 12:17:51,204 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-24 12:17:51,204 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,204 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-24 12:17:51,206 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-24 12:17:51,206 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,207 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-24 12:17:51,208 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-24 12:17:51,208 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-24 12:17:51,211 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-24 12:17:51,212 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,212 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-24 12:17:51,220 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-24 12:17:51,220 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-24 12:17:51,222 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-24 12:17:51,222 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-24 12:17:51,224 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-24 12:17:51,224 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-24 12:17:51,233 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-24 12:17:51,233 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-24 12:17:51,237 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-24 12:17:51,238 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,238 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,238 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-24 12:17:51,241 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-24 12:17:51,242 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,388 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:17:51,402 root         INFO     User-Registration: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:17:51,404 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-24 12:17:51,408 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-24 12:17:51,409 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-24 12:17:51,411 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-24 12:17:51,412 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-24 12:17:51,413 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-24 12:17:51,413 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,413 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-24 12:17:51,415 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-24 12:17:51,415 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-24 12:17:51,418 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-24 12:17:51,418 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-24 12:17:51,419 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-24 12:17:51,419 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,420 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-24 12:17:51,426 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-24 12:17:51,426 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,427 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-24 12:17:51,429 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-24 12:17:51,429 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-24 12:17:51,433 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-24 12:17:51,434 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,434 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-24 12:17:51,437 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-24 12:17:51,437 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-24 12:17:51,439 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-24 12:17:51,440 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-24 12:17:51,443 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-24 12:17:51,443 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-24 12:17:51,447 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-24 12:17:51,447 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-24 12:17:51,454 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-24 12:17:51,454 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,455 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,456 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-24 12:17:51,463 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-24 12:17:51,463 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:17:51,467 root         INFO     User-Registration: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:19:18,305 faker.factory DEBUG    Not in REPL -> leaving logger event level as is.
+2020-02-24 12:19:19,242 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:19:19,323 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:19:19,325 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-24 12:19:19,330 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-24 12:19:19,332 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-24 12:19:19,334 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-24 12:19:19,335 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-24 12:19:19,337 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-24 12:19:19,338 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,339 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-24 12:19:19,344 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-24 12:19:19,345 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-24 12:19:19,348 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-24 12:19:19,349 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-24 12:19:19,351 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-24 12:19:19,352 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,352 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-24 12:19:19,354 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-24 12:19:19,355 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,355 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-24 12:19:19,356 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-24 12:19:19,357 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-24 12:19:19,362 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-24 12:19:19,363 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,363 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-24 12:19:19,368 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-24 12:19:19,369 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-24 12:19:19,371 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-24 12:19:19,373 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-24 12:19:19,375 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-24 12:19:19,375 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-24 12:19:19,381 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-24 12:19:19,384 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-24 12:19:19,391 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-24 12:19:19,392 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,393 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,394 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-24 12:19:19,399 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-24 12:19:19,401 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,558 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:19:19,642 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-24 12:19:19,645 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-24 12:19:19,646 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-24 12:19:19,649 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-24 12:19:19,649 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-24 12:19:19,652 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-24 12:19:19,653 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,653 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-24 12:19:19,655 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-24 12:19:19,656 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-24 12:19:19,661 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-24 12:19:19,661 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-24 12:19:19,662 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-24 12:19:19,663 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,663 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-24 12:19:19,666 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-24 12:19:19,667 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,668 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-24 12:19:19,669 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-24 12:19:19,670 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-24 12:19:19,674 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-24 12:19:19,675 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,676 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-24 12:19:19,680 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-24 12:19:19,681 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-24 12:19:19,683 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-24 12:19:19,683 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-24 12:19:19,684 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-24 12:19:19,685 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-24 12:19:19,691 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-24 12:19:19,691 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-24 12:19:19,697 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-24 12:19:19,697 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,699 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,700 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-24 12:19:19,706 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-24 12:19:19,706 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,856 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:19:19,869 root         INFO     User-Registration: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-24 12:19:19,871 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+2020-02-24 12:19:19,875 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+2020-02-24 12:19:19,875 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+2020-02-24 12:19:19,879 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+2020-02-24 12:19:19,880 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+2020-02-24 12:19:19,882 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2020-02-24 12:19:19,883 faker.factory DEBUG    Provider `faker.providers.barcode` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,883 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+2020-02-24 12:19:19,884 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+2020-02-24 12:19:19,885 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+2020-02-24 12:19:19,887 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+2020-02-24 12:19:19,888 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2020-02-24 12:19:19,888 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+2020-02-24 12:19:19,889 faker.factory DEBUG    Provider `faker.providers.currency` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,889 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+2020-02-24 12:19:19,891 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+2020-02-24 12:19:19,892 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,892 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+2020-02-24 12:19:19,893 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+2020-02-24 12:19:19,894 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+2020-02-24 12:19:19,897 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+2020-02-24 12:19:19,897 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,897 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+2020-02-24 12:19:19,899 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+2020-02-24 12:19:19,900 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+2020-02-24 12:19:19,901 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+2020-02-24 12:19:19,902 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+2020-02-24 12:19:19,902 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+2020-02-24 12:19:19,903 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+2020-02-24 12:19:19,912 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+2020-02-24 12:19:19,912 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2020-02-24 12:19:19,921 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+2020-02-24 12:19:19,921 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,921 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,922 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+2020-02-24 12:19:19,927 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+2020-02-24 12:19:19,928 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2020-02-24 12:19:19,932 root         INFO     User-Registration: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1

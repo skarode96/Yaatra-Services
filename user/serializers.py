@@ -9,8 +9,8 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'email', 'gender', 'age', 'username', 'created_on', 'last_login',
-                  'password', 'pref_mode_travel', 'pref_gender']
+        fields = ['id', 'first_name', 'last_name', 'email', 'gender', 'age', 'username', 'created_on', 'last_login',
+                  'password', 'pref_mode_travel', 'pref_gender', 'rating']
 
     def save(self):
         userDetails = User(first_name=self.validated_data['first_name'],
