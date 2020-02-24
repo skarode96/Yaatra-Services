@@ -2,6 +2,7 @@ from decimal import Decimal
 from tkinter import Place
 
 from django.contrib.auth import authenticate
+from django.db.models import Max
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
@@ -157,23 +158,27 @@ def create_daily_commute(request):
         if nearby_travels:
             minimum_distance = 1000
             for travel in nearby_travels:
-                distance = mpu.haversine_distance((travel.source_lat, travel.source_long), (source_lat, source_long))
+                distance = mpu.haversine_distance((Decimal(travel.source_lat), Decimal(travel.source_long)), (Decimal(source_lat), Decimal(source_long)))
                 if distance < minimum_distance:
                     minimum_distance = distance
-                    nearest_journey_id = travel.id
+                    data['journey_id']  = travel.journey_id
         else:
-            max_journey_id = DailyCommute.objects.all().aggregate(max('journey_id'))
-            data['journey_id'] = max_journey_id
-            serializer = DailyCommuteSerializer(instance=data)
-            if serializer.is_valid():
-                dailyCommuteDetails = serializer.save()
-                dailyCommuteData = model_to_dict(dailyCommuteDetails,
-                                                 fields=['journey_id', 'journey_title', 'source_long', 'source_lat', 'destination_lat',
-                                                         'destination_long', 'start_time', 'journey_frequency'])
-                dailyCommuteData['message'] = 'Journey creation Successful!'
-                dailyCommuteData['response'] = 'Success'
+            if DailyCommute.objects.all().exists():
+                max_journey_id = DailyCommute.objects.all().aggregate(Max('journey_id'))['journey_id__max']
             else:
-                dailyCommuteData = serializer.errors
+                max_journey_id = 0
+            data['journey_id'] = max_journey_id
+        data['user'] = user.pk
+        serializer = DailyCommuteSerializer(data=data)
+        if serializer.is_valid():
+            dailyCommuteDetails = serializer.save()
+            dailyCommuteData = model_to_dict(dailyCommuteDetails,
+                                             fields=['journey_id', 'journey_title', 'source_long', 'source_lat', 'destination_lat',
+                                                     'destination_long', 'start_time', 'journey_frequency'])
+            dailyCommuteData['message'] = 'Journey creation Successful!'
+            dailyCommuteData['response'] = 'Success'
+        else:
+            dailyCommuteData = serializer.errors
         return Response(dailyCommuteData, status=HTTP_201_CREATED)
 
 
