@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-import django_heroku
+#import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ih5^&ekl4syx1za!u6u5lm^fh4e@o@z_^h=t9fr&wufbz$eo7^'
+SECRET_KEY = '4pyl11d6x7p5=b38%n%9*wlqu7_1mj&tgzlqv_36kt%f$fgib*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,15 +41,67 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'daily_commute',
-    'user'
+    'user',
+    'rest_framework_swagger'
 ]
+
+AUTH_USER_MODEL = 'user.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated', )
+        'rest_framework.permissions.IsAuthenticated', ),
+    'DEFAULT_SCHEMA_CLASS':
+        'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+    ),
+    'DEFAULT_MODEL_SERIALIZER_CLASS': (
+        'rest_framework.serializers.ModelSerializer',
+    ),
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'console': {
+            'format': '%(name)-12s %(levelname)-8s %(message)s'
+        },
+        'file': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+        }
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'formatter': 'file',
+            'filename': './logs/debug.log'
+        }
+    },
+    'loggers': {
+        '': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'file']
+        }
+    }
+}
+
+SWAGGER_SETTINGS = {
+    'SHOW_REQUEST_HEADERS': True,
+    'SUPPORTED_SUBMIT_METHODS': [
+        'get',
+        'post',
+    ]
 }
 
 MIDDLEWARE = [
@@ -84,23 +136,22 @@ WSGI_APPLICATION = 'yaatra.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('DATABASE_ENGINE', ''),
-        'NAME': os.environ.get('DATABASE_NAME', ''),
-        'USER': os.environ.get('DATABASE_USER', ''),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
-        'HOST': os.environ.get('DATABASE_HOST', ''),
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'yaatra',
+        'USER': 'ase',
+        'PASSWORD': 'ase',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
-AUTH_USER_MODEL = 'user.User'
 
 # Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -119,7 +170,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
+# https://docs.djangoproject.com/en/2.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -133,8 +184,8 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+# https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-django_heroku.settings(locals())
-del DATABASES['default']['OPTIONS']['sslmode']
+#django_heroku.settings(locals())
+#del DATABASES['default']['OPTIONS']['sslmode']
