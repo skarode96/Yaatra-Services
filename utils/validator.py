@@ -28,3 +28,10 @@ def validate_journey(journey_id):
         return journey_id
     else:
         return None
+
+
+def validate_user_id(user_id):
+    if User.objects.filter(id=user_id).exists():
+        return user_id
+    else:
+        return None

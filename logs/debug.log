@@ -4443,3 +4443,50 @@ Traceback (most recent call last):
     "Choices are: %s" % (name, ", ".join(available)))
 django.core.exceptions.FieldError: Cannot resolve keyword 'journey_id' into field. Choices are: created_on, destination_lat, destination_long, id, journey_frequency, journey_title, pref_gender, pref_mode_travel, source_lat, source_long, start_time, user, user_id
 2020-02-17 13:05:59,546 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:22:31,381 root         INFO     User-List-for-Journey: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:23:06,264 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:23:13,452 root         INFO     User-Rating-Update: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:23:25,209 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:26:16,323 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:32:43,919 root         INFO     User-Login: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:40:00,199 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:40:34,906 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:40:55,272 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:41:21,655 root         INFO     Create-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:59:06,736 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 11:59:16,390 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:28:42,404 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:42:20,366 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:42:43,574 django.request ERROR    Internal Server Error: /commute/daily/schedules/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/ratelimit/decorators.py", line 30, in _wrapped
+    return fn(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/shravani/Documents/Advanced Software Engg/Latest/yaatra-services/daily_commute/views.py", line 54, in get_daily_commutes_for_user
+    journey_id = detail.id
+AttributeError: 'collections.OrderedDict' object has no attribute 'id'
+2020-02-20 12:43:01,584 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:45:47,561 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:47:19,372 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1
+2020-02-20 12:55:57,889 root         INFO     Get-Daily-Commute: Request is being served by Instance: Shravanis-MacBook-Air.local at IP: 127.0.0.1

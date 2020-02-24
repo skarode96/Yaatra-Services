@@ -12,7 +12,7 @@ from rest_framework.status import (
 )
 
 from user.models import User
-from utils.validator import validate_username, validate_journey
+from utils.validator import validate_username, validate_journey, validate_user_id
 import ratelimit.decorators
 from .models import DailyCommute
 from .serializers import DailyCommuteSerializer
@@ -37,19 +37,21 @@ def get_daily_commutes_for_user(request):
     """
 
     if request.method == 'POST':
-        username = request.data.get('username')
+        user_id = request.data.get('user_id')
 
-        if validate_username(username) is None:
-            return Response({'message': 'Username does not Exist!',
+        if validate_user_id(user_id) is None:
+            return Response({'message': 'User does not Exist!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
-        user = User.objects.get(username=username)
+        user = User.objects.get(id=user_id)
         user_id = user.pk
         daily_commutes = DailyCommute.objects.filter(user_id=user_id)
         serializer = DailyCommuteSerializer(instance=daily_commutes, many=True)
         data = serializer.data[:]
-
+        for detail in data:
+            journey_id = detail.get('id')
+            detail['number_of_travellers'] = DailyCommute.objects.filter(id=journey_id).count()
         return Response(data, status=HTTP_200_OK)
 
 
@@ -109,19 +111,19 @@ def create_daily_commute(request):
     if request.method == 'POST':
 
         if request.data.get('journey_title') is None or request.data.get('destination_lat') is None or \
-                request.data.get('start_time') is None or request.data.get('journey_frequency') is None or request.data.get('username') is None:
+                request.data.get('start_time') is None or request.data.get('journey_frequency') is None or request.data.get('user_id') is None:
             return Response({'message': 'Form Data is missing!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
-        username = request.data.get('username')
-        if validate_username(username) is None:
-            return Response({'message': 'Username does not Exist!',
+        user_id = request.data.get('user_id')
+        if validate_user_id(user_id) is None:
+            return Response({'message': 'User does not Exist!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
         data = request.data.copy()
-        user = User.objects.get(username=username)
+        user = User.objects.get(id=user_id)
         data['user'] = user.pk
         serializer = DailyCommuteSerializer(data=data)
 
