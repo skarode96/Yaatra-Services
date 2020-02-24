@@ -4,7 +4,6 @@ from .models import DailyCommute
 
 
 class DailyCommuteSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = DailyCommute
         fields = ['user', 'journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time', 'pref_mode_travel', 'pref_gender', 'journey_frequency', 'journey_id']
@@ -24,4 +23,3 @@ class DailyCommuteSerializer(serializers.ModelSerializer):
                            )
         dailyCommuteDetails.save()
         return dailyCommuteDetails
-

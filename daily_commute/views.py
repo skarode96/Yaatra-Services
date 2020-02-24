@@ -16,7 +16,7 @@ from rest_framework.status import (
 )
 
 from user.models import User
-from utils.validator import validate_username
+from utils.validator import validate_username, validate_journey, validate_user_id
 import ratelimit.decorators
 from .models import DailyCommute
 from .serializers import DailyCommuteSerializer
@@ -31,7 +31,7 @@ machine_ip = socket.gethostbyname(host_name)
 
 @ratelimit.decorators.ratelimit(key='ip', rate='200/h')
 @csrf_exempt
-@api_view(["GET"])
+@api_view(["POST"])
 def get_daily_commutes_for_user(request):
     logger = logging.getLogger()
     logger.info("Get-Daily-Commute: Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
@@ -40,30 +40,30 @@ def get_daily_commutes_for_user(request):
     return: should return jouney_id (pk) of each list item of DailyCommute Model to be used by daily_commute_user_list view
     to fetch the list of user for a particular daily commute journey.
     """
-    data = [
-        {
-            'jouney_id': 123,
-            'title': 'Ghatkopar',
-            'Source': 'Dublin 8, Cork Street',
-            'Destination': 'Trinity College Dublin, College Green'},
-        {
-            'jouney_id': 124,
-            'title': 'Ghatkopar',
-            'Source': 'Dublin 8, Cork Street',
-            'Destination': 'Spar, College Green'},
-        {
-            'jouney_id': 125,
-            'title': 'Ghatkopar',
-            'Source': 'Dublin 8, Cork Street',
-            'Destination': 'Trinity College Dublin, College Green'}, ]
 
-    return Response(data, status=HTTP_200_OK)
+    if request.method == 'POST':
+        user_id = request.data.get('user_id')
+
+        if validate_user_id(user_id) is None:
+            return Response({'message': 'User does not Exist!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+
+        user = User.objects.get(id=user_id)
+        user_id = user.pk
+        daily_commutes = DailyCommute.objects.filter(user_id=user_id)
+        serializer = DailyCommuteSerializer(instance=daily_commutes, many=True)
+        data = serializer.data[:]
+        for detail in data:
+            journey_id = detail.get('id')
+            detail['number_of_travellers'] = DailyCommute.objects.filter(id=journey_id).count()
+        return Response(data, status=HTTP_200_OK)
 
 
 @ratelimit.decorators.ratelimit(key='ip', rate='200/h')
 @csrf_exempt
-@api_view(["GET"])
-def get_user_list_for_journey(request):
+@api_view(["POST"])
+def get_journey_details(request):
     logger = logging.getLogger()
     logger.info(
         "User-List-for-Journey: Request is being served by Instance: {} at IP: {}".format(host_name, machine_ip))
@@ -72,30 +72,27 @@ def get_user_list_for_journey(request):
         input: journey_id (pk)
         return:  list of users that matched the given journey_id details
         to fetch the list of user for a particular daily commute journey.
-
-        data = [
-            {
-                'first_name': alex,
-                'gender': M
-                'age': 20
-                'Source': 'Dublin 8, Cork Street',
-                'Destination': 'Trinity College Dublin, College Green'},
-            {
-                'first_name': alex,
-                'gender': M
-                'age': 20
-                'Source': 'Dublin 8, Cork Street',
-                'Destination': 'Trinity College Dublin, College Green'},
-            {
-                'first_name': alex,
-                'gender': M
-                'age': 20
-                'Source': 'Dublin 8, Cork Street',
-                'Destination': 'Trinity College Dublin, College Green'},
-        ]
         """
-    data = []
-    return Response(data, status=HTTP_200_OK)
+    if request.method == 'POST':
+        journey_id = request.data.get('journey_id')
+        username = request.data.get('username')
+
+        if validate_username(username) is None:
+            return Response({'message': 'Username does not Exist!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+
+        if validate_journey(journey_id) is None:
+            return Response({'message': 'Journey does not Exist!',
+                             'response': 'Error', },
+                            status=HTTP_400_BAD_REQUEST)
+
+        user = User.objects.get(username=username)
+        user_id = user.pk
+        daily_commutes = DailyCommute.objects.get(user_id=user_id, id=journey_id)
+        serializer = DailyCommuteSerializer(instance=daily_commutes)
+        data = serializer.data
+        return Response(data, status=HTTP_200_OK)
 
 
 @ratelimit.decorators.ratelimit(key='ip', rate='50/m')
@@ -123,20 +120,19 @@ def create_daily_commute(request):
     if request.method == 'POST':
 
         if request.data.get('journey_title') is None or request.data.get('destination_lat') is None or \
-                request.data.get('start_time') is None or request.data.get(
-            'journey_frequency') is None or request.data.get('username') is None:
+                request.data.get('start_time') is None or request.data.get('journey_frequency') is None or request.data.get('user_id') is None:
             return Response({'message': 'Form Data is missing!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
-        username = request.data.get('username')
-        if validate_username(username) is None:
-            return Response({'message': 'Username does not Exist!',
+        user_id = request.data.get('user_id')
+        if validate_user_id(user_id) is None:
+            return Response({'message': 'User does not Exist!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
         data = request.data.copy()
-        user = User.objects.get(username=username)
+        user = User.objects.get(id=user_id)
         data['user'] = user.pk
         source_long, source_lat = request.data.get('source_long'), request.data.get('source_lat')
         dest_long, dest_lat = request.data.get('destination_long'), request.data.get('destination_lat')

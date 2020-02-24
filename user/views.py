@@ -11,8 +11,8 @@ from rest_framework.status import (
     HTTP_400_BAD_REQUEST,
     HTTP_404_NOT_FOUND,
     HTTP_200_OK,
-    HTTP_201_CREATED
-)
+    HTTP_201_CREATED,
+    HTTP_401_UNAUTHORIZED)
 import ratelimit.decorators
 from django.forms.models import model_to_dict
 
@@ -37,7 +37,7 @@ def user_login(request):
         if request.data.get("username") is None or request.data.get("password") is None:
             return Response({'message': 'Either Username or Password is missing!',
                              'response': 'Error', },
-                            status=HTTP_400_BAD_REQUEST)
+                            status=HTTP_401_UNAUTHORIZED)
 
         username = request.data.get("username")
         password = request.data.get("password")
@@ -46,7 +46,7 @@ def user_login(request):
         if not user:
             return Response({'message': 'User Not Found, Invalid Credentials!',
                              'response': 'Error'},
-                            status=HTTP_404_NOT_FOUND)
+                            status=HTTP_401_UNAUTHORIZED)
 
         auth_token, _ = Token.objects.get_or_create(user=user)
         usr = User.objects.get(username=username)

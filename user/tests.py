@@ -8,8 +8,8 @@ from rest_framework.status import (
     HTTP_400_BAD_REQUEST,
     HTTP_404_NOT_FOUND,
     HTTP_200_OK,
-    HTTP_201_CREATED
-)
+    HTTP_201_CREATED,
+    HTTP_401_UNAUTHORIZED)
 from rest_framework.authtoken.models import Token
 seed(1)
 
@@ -40,13 +40,13 @@ class UserLoginTests(TestCase):
     def test_missing_username_password(self):
         credentials = {}
         response = self.client.post('/user/login/', credentials)
-        self.assertTrue(response.status_code == HTTP_400_BAD_REQUEST)
+        self.assertTrue(response.status_code == HTTP_401_UNAUTHORIZED)
         self.assertEqual(response.data['message'], 'Either Username or Password is missing!')
 
     def test_invalid_username_password(self):
         credentials = {'username': randomString(), 'password': randomString()}
         response = self.client.post('/user/login/', credentials)
-        self.assertTrue(response.status_code == HTTP_404_NOT_FOUND)
+        self.assertTrue(response.status_code == HTTP_401_UNAUTHORIZED)
         self.assertEqual(response.data['message'], 'User Not Found, Invalid Credentials!')
 
 
