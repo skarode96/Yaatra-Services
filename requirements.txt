@@ -17,3 +17,4 @@ djangorestframework==3.10.3
 django-ratelimit
 Faker
 django-rest-swagger
+mpu==0.20.0

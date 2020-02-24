@@ -16,3 +16,4 @@ nohup.out
 service/settings_prod.py
 API/__pycache__/
 __pycache__/
+/logs/debug.log
