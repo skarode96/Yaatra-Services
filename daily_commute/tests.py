@@ -19,11 +19,11 @@ from .views import create_daily_commute
 seed(1)
 
 class create_user():
-    def create_user(self, username, password, first_name, last_name, gender, email, pref_mode_travel, pref_gender, rating, total_rating_count,age):
+    def create_user(self, username, password, first_name, last_name, gender, email, pref_mode_travel, pref_gender, rating, total_rating_count,age, phone_number, country):
         user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name, gender=gender,
                                         age=age, email=email, password=password, rating=rating,
                                         total_rating_count=total_rating_count, pref_mode_travel=pref_mode_travel,
-                                        pref_gender=pref_gender)
+                                        pref_gender=pref_gender, phone_number=phone_number, country=country)
         user.set_password(password)
         user.save()
         auth_token, _ = Token.objects.get_or_create(user=user)
@@ -46,8 +46,11 @@ class DailyCommuteTests(TestCase):
         age = randint(0, 10)
         pref_mode_travel = randint(0, 9)
         pref_gender = randint(0, 9)
+        phone_number = 9869757565
+        country = randomString()
         user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name, gender=gender,
-                                        age=age, email=email, password=password, pref_mode_travel=pref_mode_travel, pref_gender=pref_gender)
+                                        age=age, email=email, password=password, pref_mode_travel=pref_mode_travel, pref_gender=pref_gender,
+                                        phone_number=phone_number, country=country)
         user.set_password(password)
         user.save()
         credentials = {'username': username, 'password': password}
@@ -76,10 +79,12 @@ class DailyCommuteTests(TestCase):
         rating = randint(0, 5)
         total_rating_count = randint(20, 40)
         age = randint(0, 10)
+        phone_number = 9869757565
+        country = randomString()
         user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name, gender=gender,
                                         age=age, email=email, password=password, rating=rating,
                                         total_rating_count=total_rating_count, pref_mode_travel=pref_mode_travel,
-                                        pref_gender=pref_gender)
+                                        pref_gender=pref_gender, phone_number=phone_number, country=country)
         user.set_password(password)
         user.save()
         auth_token, _ = Token.objects.get_or_create(user=user)
