@@ -32,12 +32,18 @@
 
 `alter role ase set default_transaction_isolation to 'read committed';`
 
+`create database yaatra`
+ 
 `grant all privileges on database yaatra to ase`
 
 #### 4. List all databases
 
 `\l` 
 
+`\c yaatra` 
+
 #### 5. In the project folder run the following command
 
 `python manage.py makemigrations`
+
+`python manage.py migrate`

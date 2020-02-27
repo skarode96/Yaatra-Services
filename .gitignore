@@ -16,3 +16,4 @@ nohup.out
 /service/__pycache__/
 API/__pycache__/
 __pycache__/
+/logs/debug.log

@@ -12,11 +12,12 @@ class DailyCommute(models.Model):
     journey_frequency = models.IntegerField()
     pref_gender = models.IntegerField()
     pref_mode_travel = models.IntegerField()
+    journey_id = models.IntegerField(default=0, editable=True)
 
     start_time = models.DateTimeField(verbose_name=' Journey Start Time')
     created_on = models.DateTimeField(verbose_name='Creation Date', auto_now_add=True)
 
-    REQUIRED_FIELDS = ['journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time', 'journey_frequency', 'pref_mode_travel', 'pref_gender']
+    REQUIRED_FIELDS = ['journey_id', 'journey_title', 'source_long', 'source_lat', 'destination_lat', 'destination_long', 'start_time', 'journey_frequency', 'pref_mode_travel', 'pref_gender']
 
     def __str__(self):
         return self.journey_title
