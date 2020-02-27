@@ -77,7 +77,8 @@ def user_registration(request):
         if request.data.get('email') is None or request.data.get('username') is None or \
                 request.data.get('first_name') is None or request.data.get('gender') is None or request.data.get(
             'age') is None or request.data.get('last_name') is None \
-                or request.data.get('password') is None or request.data.get('confirm_password') is None:
+                or request.data.get('password') is None or request.data.get('confirm_password') is None or  request.data.get('country') is None \
+                or request.data.get('phone_number') is None :
             return Response({'message': 'Form Data is missing!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)

@@ -55,8 +55,8 @@ def get_daily_commutes_for_user(request):
         serializer = DailyCommuteSerializer(instance=daily_commutes, many=True)
         data = serializer.data[:]
         for detail in data:
-            journey_id = detail.get('id')
-            detail['number_of_travellers'] = DailyCommute.objects.filter(id=journey_id).count()
+            journey_id = detail.get('journey_id')
+            detail['number_of_travellers'] = DailyCommute.objects.filter(journey_id=journey_id).count()
         return Response(data, status=HTTP_200_OK)
 
 
@@ -75,10 +75,10 @@ def get_journey_details(request):
         """
     if request.method == 'POST':
         journey_id = request.data.get('journey_id')
-        username = request.data.get('username')
+        user_id = request.data.get('user_id')
 
-        if validate_username(username) is None:
-            return Response({'message': 'Username does not Exist!',
+        if validate_user_id(user_id) is None:
+            return Response({'message': 'user does not Exist!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
@@ -87,9 +87,9 @@ def get_journey_details(request):
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
 
-        user = User.objects.get(username=username)
+        user = User.objects.get(id=user_id)
         user_id = user.pk
-        daily_commutes = DailyCommute.objects.get(user_id=user_id, id=journey_id)
+        daily_commutes = DailyCommute.objects.get(user_id=user_id, journey_id=journey_id)
         serializer = DailyCommuteSerializer(instance=daily_commutes)
         data = serializer.data
         return Response(data, status=HTTP_200_OK)
@@ -160,7 +160,7 @@ def create_daily_commute(request):
                     data['journey_id']  = travel.journey_id
         else:
             if DailyCommute.objects.all().exists():
-                max_journey_id = DailyCommute.objects.all().aggregate(Max('journey_id'))['journey_id__max']
+                max_journey_id = DailyCommute.objects.all().aggregate(Max('journey_id'))['journey_id__max'] + 1
             else:
                 max_journey_id = 0
             data['journey_id'] = max_journey_id

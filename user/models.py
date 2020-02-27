@@ -5,7 +5,7 @@ from django.db import models
 class CustomUserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, email, username, first_name, last_name, age, gender, password, pref_mode_travel, pref_gender, rating=None, total_rating_count=None):
+    def create_user(self, email, username, first_name, last_name, age, gender, password, pref_mode_travel, pref_gender, country, phone_number, rating=None, total_rating_count=None):
         user = self.model(
             email=self.normalize_email(email),
             username=username,
@@ -17,13 +17,15 @@ class CustomUserManager(BaseUserManager):
             total_rating_count=total_rating_count,
             pref_gender=pref_gender,
             pref_mode_travel=pref_mode_travel,
+            country=country,
+            phone_number=phone_number
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password, first_name, last_name, age, gender, pref_mode_travel, pref_gender):
+    def create_superuser(self, email, username, password, first_name, last_name, age, gender, pref_mode_travel, pref_gender, country, phone_number):
         user = self.create_user(
             email=self.normalize_email(email),
             password=password,
@@ -34,6 +36,8 @@ class CustomUserManager(BaseUserManager):
             gender=gender,
             pref_gender=pref_gender,
             pref_mode_travel=pref_mode_travel,
+            country=country,
+            phone_number=phone_number
         )
         user.is_admin = True
         user.is_staff = True
@@ -49,6 +53,8 @@ class User(AbstractBaseUser):
     email = models.EmailField(unique=True)
     age = models.IntegerField()
     gender = models.CharField(max_length=1)
+    country = models.CharField(null=True, max_length=30)
+    phone_number = models.BigIntegerField(null=True)
 
     pref_gender = models.IntegerField()
     pref_mode_travel = models.IntegerField()
@@ -63,7 +69,7 @@ class User(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 
-    REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'gender', 'age', 'pref_gender', 'pref_mode_travel']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'email', 'gender', 'age', 'pref_gender', 'pref_mode_travel', 'country', 'phone_number']
     USERNAME_FIELD = 'username'
 
     objects = CustomUserManager()
