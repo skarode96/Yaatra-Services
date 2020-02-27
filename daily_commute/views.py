@@ -50,8 +50,8 @@ def get_daily_commutes_for_user(request):
         serializer = DailyCommuteSerializer(instance=daily_commutes, many=True)
         data = serializer.data[:]
         for detail in data:
-            journey_id = detail.get('id')
-            detail['number_of_travellers'] = DailyCommute.objects.filter(id=journey_id).count()
+            journey_id = detail.get('journey_id')
+            detail['number_of_travellers'] = DailyCommute.objects.filter(journey_id=journey_id).count()
         return Response(data, status=HTTP_200_OK)
 
 

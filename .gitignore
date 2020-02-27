@@ -1,6 +1,7 @@
 /.idea
 
 # rohan - ignore
+*.log
 .env
 .venv
 .coverage
@@ -13,6 +14,5 @@ env.bak/
 venv.bak/
 nohup.out
 /service/__pycache__/
-service/settings_prod.py
 API/__pycache__/
 __pycache__/

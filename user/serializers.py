@@ -10,7 +10,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'first_name', 'last_name', 'email', 'gender', 'age', 'username', 'created_on', 'last_login',
-                  'password', 'pref_mode_travel', 'pref_gender', 'rating']
+                  'password', 'pref_mode_travel', 'pref_gender', 'rating', 'country', 'phone_number']
 
     def save(self):
         userDetails = User(first_name=self.validated_data['first_name'],
@@ -20,7 +20,9 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
                            username=self.validated_data['username'],
                            age=self.validated_data['age'],
                            pref_mode_travel=self.validated_data['pref_mode_travel'],
-                           pref_gender=self.validated_data['pref_gender']
+                           pref_gender=self.validated_data['pref_gender'],
+                           country=self.validated_data['country'],
+                           phone_number=self.validated_data['phone_number']
                            )
         password = self.validated_data['password']
         userDetails.set_password(password)

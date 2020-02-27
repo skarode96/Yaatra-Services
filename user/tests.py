@@ -27,9 +27,12 @@ class UserLoginTests(TestCase):
         pref_mode_travel = randint(0, 9)
         pref_gender = randint(0, 9)
         age = randint(0, 10)
+        phone_number = 9869757565
+        country = randomString()
 
         user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name, gender=gender,
-                                        age=age, email=email, password=password, pref_mode_travel=pref_mode_travel, pref_gender=pref_gender)
+                                        age=age, email=email, password=password, pref_mode_travel=pref_mode_travel, pref_gender=pref_gender,
+                                        phone_number=phone_number, country=country)
         user.set_password(password)
         user.save()
         credentials = {'username': username, 'password': password}
@@ -50,6 +53,7 @@ class UserLoginTests(TestCase):
         self.assertEqual(response.data['message'], 'User Not Found, Invalid Credentials!')
 
 
+
 class UserRegistrationTests(TestCase):
     """write user registration tests here"""
 
@@ -59,14 +63,49 @@ class UserRegistrationTests(TestCase):
         self.assertTrue(response.status_code == HTTP_400_BAD_REQUEST)
         self.assertEqual(response.data['message'], 'Form Data is missing!')
 
-    def test_user_register(self):
+    def test_user_registration_for_same_email(self):
         password = randomString()
+        email = Faker().email()
         user_details = {'username': randomString(), 'password': password, 'first_name': randomString(),
                         'last_name': randomString(), 'age': randint(0, 10), 'confirm_password': password,
-                        'gender': randomString(1),'email': Faker().email(), 'pref_gender': randint(0, 9), 'pref_mode_travel': randint(0, 9)}
+                        'gender': randomString(1), 'email': email, 'pref_gender': randint(0, 9),
+                        'pref_mode_travel': randint(0, 9), 'phone_number': 9869757565, 'country': randomString()}
         response = self.client.post('/user/register/', user_details)
         self.assertTrue(response.status_code == HTTP_201_CREATED)
-        self.assertEqual(response.data['message'], 'User Registration Successful!')
+        user_details_with_same_email = {'username': randomString(), 'password': password, 'first_name': randomString(),
+                        'last_name': randomString(), 'age': randint(0, 10), 'confirm_password': password,
+                        'gender': randomString(1), 'email': email, 'pref_gender': randint(0, 9),
+                        'pref_mode_travel': randint(0, 9), 'phone_number': 9869757565, 'country': randomString()}
+        response = self.client.post('/user/register/', user_details_with_same_email)
+        self.assertTrue(response.status_code == HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.data['message'], 'Email Already Exists!')
+
+    def test_user_registration_for_same_username(self):
+        password = randomString()
+        email = Faker().email()
+        user_details = {'username': randomString(), 'password': password, 'first_name': randomString(),
+                        'last_name': randomString(), 'age': randint(0, 10), 'confirm_password': password,
+                        'gender': randomString(1), 'email': email, 'pref_gender': randint(0, 9),
+                        'pref_mode_travel': randint(0, 9), 'phone_number': 9869757565, 'country': randomString()}
+        response = self.client.post('/user/register/', user_details)
+        self.assertTrue(response.status_code == HTTP_201_CREATED)
+        user_details_with_same_email = {'username': randomString(), 'password': password, 'first_name': randomString(),
+                        'last_name': randomString(), 'age': randint(0, 10), 'confirm_password': password,
+                        'gender': randomString(1), 'email': email, 'pref_gender': randint(0, 9),
+                        'pref_mode_travel': randint(0, 9), 'phone_number': 9869757565, 'country': randomString()}
+        response = self.client.post('/user/register/', user_details_with_same_email)
+        self.assertTrue(response.status_code == HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.data['message'], 'Email Already Exists!')
+
+    def test_user_register(self):
+        password = randomString()
+        username = randomString()
+        user_details = {'username': username, 'password': password, 'first_name': randomString(),
+                        'last_name': randomString(), 'age': randint(0, 10), 'confirm_password': password,
+                        'gender': randomString(1), 'email': Faker().email(), 'pref_gender': randint(0, 9),
+                        'pref_mode_travel': randint(0, 9), 'phone_number': 9869757565, 'country': randomString()}
+        response = self.client.post('/user/register/', user_details)
+        self.assertTrue(response.status_code == HTTP_201_CREATED)
 
 
 class UserRatingTests(TestCase):
@@ -84,9 +123,12 @@ class UserRatingTests(TestCase):
         rating = randint(0, 5)
         total_rating_count = randint(20, 40)
         age = randint(0, 10)
+        phone_number = 9869757565
+        country = randomString()
 
         user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name, gender=gender,
-                                        age=age, email=email, password=password, rating=rating, total_rating_count=total_rating_count, pref_mode_travel=pref_mode_travel, pref_gender=pref_gender)
+                                        age=age, email=email, password=password, rating=rating, total_rating_count=total_rating_count, pref_mode_travel=pref_mode_travel, pref_gender=pref_gender,
+                                        phone_number=phone_number, country=country)
         user.set_password(password)
         user.save()
         auth_token, _ = Token.objects.get_or_create(user=user)
