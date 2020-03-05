@@ -24,7 +24,7 @@ def validate_password(password, confirm_password):
 
 
 def validate_journey(journey_id):
-    if DailyCommute.objects.filter(id=journey_id).exists():
+    if DailyCommute.objects.filter(journey_id=journey_id).exists():
         return journey_id
     else:
         return None
