@@ -17,3 +17,4 @@ nohup.out
 API/__pycache__/
 __pycache__/
 /logs/debug.log
+yaatra/settings.py

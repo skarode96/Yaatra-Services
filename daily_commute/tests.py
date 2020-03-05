@@ -60,7 +60,7 @@ class DailyCommuteTests(TestCase):
         user_id_body = {'user_id': user_id}
         response = self.client.post('/commute/daily/schedules/', user_id_body, HTTP_AUTHORIZATION='Token {}'.format(auth_token))
         self.assertTrue(response.status_code == HTTP_200_OK)
-        self.assertEqual(response.data, [])
+        self.assertEqual(response.data['journey_details'], [])
 
 
     def test_create_daily_commute_new_journey_id(self):
@@ -99,10 +99,11 @@ class DailyCommuteTests(TestCase):
                            'source_lat': "53.0",
                             'destination_lat': "-6.02",
                            'destination_long': "53.03",
-                           'start_time': "2020-02-13T15:05:11.621926Z",
+                           'start_time': "2020-02-14",
                             'journey_frequency': "2",
                            'pref_mode_travel': pref_mode_travel,
                            'pref_gender': pref_gender,
+                           'time_of_commute': '12:05:00',
                            'user_id':user_id}
         response = self.client.post('/commute/daily/', journey_details, HTTP_AUTHORIZATION='Token {}'.format(auth_token))
         print('response:', response.data)
