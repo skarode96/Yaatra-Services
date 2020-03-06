@@ -1,15 +1,10 @@
 from datetime import datetime, timedelta
 from decimal import Decimal
-from tkinter import Place
 import datetime as dt
 
-from django.contrib.auth import authenticate
 from django.db.models import Max, Q
-from django.db.models.query import QuerySet
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.status import (
     HTTP_400_BAD_REQUEST,
