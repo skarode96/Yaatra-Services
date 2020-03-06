@@ -26,6 +26,17 @@ import mpu
 
 host_name = socket.gethostname()
 machine_ip = socket.gethostbyname(host_name)
+gender_preference_map = {
+    '0': 'no_preference',
+    '1': 'female',
+    '2': 'male',
+    '3': 'other'
+}
+gender_map = {
+    'm': 'male',
+    'f': 'female',
+    'o': 'other'
+}
 
 
 @ratelimit.decorators.ratelimit(key='ip', rate='200/h')
@@ -79,7 +90,7 @@ def get_journey_details(request):
         """
     if request.method == 'POST':
 
-        if request.data.get('journey_title') is None:
+        if request.data.get('journey_id') is None:
             return Response({'message': 'Form Data is missing!',
                              'response': 'Error', },
                             status=HTTP_400_BAD_REQUEST)
@@ -169,8 +180,11 @@ def create_daily_commute(request):
         source_long, source_lat = request.data.get('source_long'), request.data.get('source_lat')
         dest_long, dest_lat = request.data.get('destination_long'), request.data.get('destination_lat')
         freq = request.data.get('journey_frequency')
+        travel_preference = request.data.get('pref_mode_travel')
+        gender_preference = request.data.get('pref_gender')
         time = datetime.strptime(request.data.get('time_of_commute'), '%H:%M:%S')
 
+        # if gender_preference
         latlong_km = Decimal(0.0039)
         buffer_time = timedelta(minutes=5)
 
@@ -180,26 +194,30 @@ def create_daily_commute(request):
         source_lat_min, source_lat_max = Decimal(source_lat) - latlong_km, Decimal(source_lat) + latlong_km
         dest_long_min, dest_long_max = Decimal(dest_long) - latlong_km, Decimal(dest_long) + latlong_km
         dest_lat_min, dest_lat_max = Decimal(dest_lat) - latlong_km, Decimal(dest_lat) + latlong_km
-        nearby_travels = DailyCommute.objects.exclude(user=user.pk).filter(source_lat__lte=source_lat_max, source_lat__gte=source_lat_min,
+        nearby_travels = DailyCommute.objects.filter(source_lat__lte=source_lat_max, source_lat__gte=source_lat_min,
                                                      source_long__lte=source_long_max, source_long__gte=source_long_min,
                                                      destination_lat__lte=dest_lat_max,
                                                      destination_lat__gte=dest_lat_min,
                                                      destination_long__lte=dest_long_max,
                                                      destination_long__gte=dest_long_min,
                                                      journey_frequency=freq,
+                                                     pref_mode_travel=travel_preference,
                                                      time_of_commute__lte=dt.time(max_buffer[3],max_buffer[4],max_buffer[5]),
                                                      time_of_commute__gte=dt.time(min_buffer[3],min_buffer[4],min_buffer[5]),
-                                                     )
+                                                     ).exclude(user_id=user_id)
         serializer = DailyCommuteSerializer(instance=nearby_travels, many=True)
-        nearby_travel_data = serializer.data[:]
         if nearby_travels:
-            # other_nearby_travellers = QuerySet.filter(~Q(user=user.pk))
             minimum_distance = 1000
             for travel in nearby_travels:
-                distance = mpu.haversine_distance((Decimal(travel.source_lat), Decimal(travel.source_long)), (Decimal(source_lat), Decimal(source_long)))
-                if distance < minimum_distance:
-                    minimum_distance = distance
-                    data['journey_id'] = travel.journey_id
+                user_match_id = travel.user_id
+                user_match = User.objects.get(id=user_match_id)
+                if (gender_preference == '0') or (gender_preference_map[gender_preference] == gender_map[user_match.gender]):
+                    distance = mpu.haversine_distance((Decimal(travel.source_lat), Decimal(travel.source_long)), (Decimal(source_lat), Decimal(source_long)))
+                    if distance < minimum_distance:
+                        minimum_distance = distance
+                        data['journey_id'] = travel.journey_id
+            if minimum_distance == 1000:
+                data['journey_id'] = DailyCommute.objects.all().aggregate(Max('journey_id'))['journey_id__max'] + 1
         else:
             if DailyCommute.objects.all().exists():
                 max_journey_id = DailyCommute.objects.all().aggregate(Max('journey_id'))['journey_id__max'] + 1
