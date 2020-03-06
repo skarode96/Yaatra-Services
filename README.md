@@ -1,7 +1,7 @@
 # yaatra-services
 [![CircleCI](https://circleci.com/gh/skarode96/yaatra-services/tree/master.svg?style=svg)](https://circleci.com/gh/skarode96/yaatra-services/tree/master)
 
-### Python Service
+### Python Service installation guide
 
 #### 1. Installing all dependencies
 `pip install -r requirements.txt`
