@@ -94,6 +94,23 @@ DATABASES = {
         'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
         'HOST': os.environ.get('DATABASE_HOST', ''),
         'PORT': '5432',
+    },
+    'failover1': {
+        'ENGINE': os.environ.get('DATABASE_ENGINE', ''),
+        'NAME': os.environ.get('DATABASE_NAME', ''),
+        'USER': os.environ.get('DATABASE_USER', ''),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
+        'HOST': os.environ.get('DATABASE_HOST', ''),
+        'PORT': '5432',
+    },
+
+    'failover2': {
+        'ENGINE': os.environ.get('DATABASE_ENGINE', ''),
+        'NAME': os.environ.get('DATABASE_NAME', ''),
+        'USER': os.environ.get('DATABASE_USER', ''),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
+        'HOST': os.environ.get('DATABASE_HOST', ''),
+        'PORT': '5432',
     }
 }
 
@@ -117,6 +134,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+DATABASE_ROUTERS = ['daily_commute.router.ModelDatabaseRouter']
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
