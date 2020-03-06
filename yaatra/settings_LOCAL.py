@@ -147,22 +147,23 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     },
-    'failover1': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'yaatra',
-        'USER': 'ase2',
-        'PASSWORD': 'ase2',
-        'HOST': 'localhost',
-        'PORT': '5433',
-    },
-    'failover2': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'yaatra',
-        'USER': 'ase3',
-        'PASSWORD': 'ase3',
-        'HOST': 'localhost',
-        'PORT': '5434',
-    }
+    #### Failover ###
+    # 'failover1': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'yaatra',
+    #     'USER': 'ase2',
+    #     'PASSWORD': 'ase2',
+    #     'HOST': 'localhost',
+    #     'PORT': '5433',
+    # },
+    # 'failover2': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'yaatra',
+    #     'USER': 'ase3',
+    #     'PASSWORD': 'ase3',
+    #     'HOST': 'localhost',
+    #     'PORT': '5434',
+    # }
 }
 
 
@@ -184,7 +185,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-DATABASE_ROUTERS = ['daily_commute.router.ModelDatabaseRouter']
+#### Failover ###
+#DATABASE_ROUTERS = ['daily_commute.router.ModelDatabaseRouter']
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
