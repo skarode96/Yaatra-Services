@@ -103,7 +103,6 @@ DATABASES = {
         'HOST': os.environ.get('DATABASE_HOST', ''),
         'PORT': '5432',
     },
-
     'failover2': {
         'ENGINE': os.environ.get('DATABASE_ENGINE', ''),
         'NAME': os.environ.get('DATABASE_NAME', ''),

@@ -21,6 +21,7 @@ def available_db():
         last_db = f[1]
     if (datetime.now() - dbha_last_check).seconds > 10:
         lines_of_text = ""
+        db = ""
         if  (test_connection_to_db(str(last_db))):
             db = str(last_db)
             lines_of_text = datetime.now().strftime('%Y-%m-%d %H:%M:%S') + "\n" + db

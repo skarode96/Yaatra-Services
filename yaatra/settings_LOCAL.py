@@ -155,7 +155,6 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5433',
     },
-
     'failover2': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'yaatra',
