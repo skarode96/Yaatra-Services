@@ -296,8 +296,8 @@ class DailyCommuteTests(TestCase):
             }
             response = self.client.post('/commute/daily/details/', get_journey_details,
                                         HTTP_AUTHORIZATION='Token {}'.format(auth_token2))
-            self.assertTrue(response.status_code == HTTP_200_OK)
-            self.assertEqual(response.data['message'], 'Journey details fetch successful')
+            self.assertTrue(response.status_code == HTTP_400_BAD_REQUEST)
+            self.assertEqual(response.data['message'], 'Journey does not exist!')
 
             # Test for fetching the created journey
             get_journey_details = {
