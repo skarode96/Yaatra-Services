@@ -179,9 +179,9 @@ def create_daily_commute(request):
         data['user'] = user.pk
         source_long, source_lat = request.data.get('source_long'), request.data.get('source_lat')
         dest_long, dest_lat = request.data.get('destination_long'), request.data.get('destination_lat')
-        freq = request.data.get('journey_frequency')
-        travel_preference = request.data.get('pref_mode_travel')
-        gender_preference = request.data.get('pref_gender')
+        freq = str(request.data.get('journey_frequency'))
+        travel_preference = str(request.data.get('pref_mode_travel'))
+        gender_preference = str(request.data.get('pref_gender'))
         time = datetime.strptime(request.data.get('time_of_commute'), '%H:%M:%S')
 
         # if gender_preference
