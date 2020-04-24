@@ -14,8 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, url
 from rest_framework_swagger.views import get_swagger_view
+
 
 schema_view = get_swagger_view(title='API docs')
 urlpatterns = [
@@ -23,4 +24,5 @@ urlpatterns = [
     path('user/', include('user.urls')),
     path('commute/', include('daily_commute.urls')),
     path('docs/', schema_view),
+    url(r'^ht/', include('health_check.urls')),
 ]

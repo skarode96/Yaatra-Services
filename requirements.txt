@@ -18,3 +18,4 @@ django-ratelimit
 Faker
 django-rest-swagger
 mpu==0.20.0
+django-health-check==3.12.1
