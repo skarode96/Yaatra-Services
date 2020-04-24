@@ -25,5 +25,5 @@ urlpatterns = [
     path('user/', include('user.urls')),
     path('commute/', include('daily_commute.urls')),
     path('docs/', schema_view),
-    url(r'^ht/', include('health_check.urls')),
+    url(r'^health/', include('health_check.urls')),
 ]
