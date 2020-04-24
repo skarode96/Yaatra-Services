@@ -2,7 +2,7 @@
 
 # ![logo](https://trello-attachments.s3.amazonaws.com/5e9b3762dfe630697c136b9c/5ea33c100871825f327b199c/af631dde2a10ac5a1b091efc3261a878/yaatra.png)
 
-# [![CircleCI](https://circleci.com/gh/skarode96/yaatra-services/tree/master.svg?style=svg)](https://circleci.com/gh/skarode96/yaatra-services/tree/master)
+# [![CircleCI](https://circleci.com/gh/skarode96/yaatra-services/tree/master.svg?style=svg)](https://circleci.com/gh/skarode96/Yaatra-Services/tree/master)
 
 ### Python Service installation guide
 
