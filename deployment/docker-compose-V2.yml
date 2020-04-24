@@ -1,0 +1,107 @@
+#Maintainer: Rohan B
+version: '2.0'
+
+services:
+  es:
+    labels:
+      com.example.service: "elastic_search"
+    image: elasticsearch:5.4
+    container_name: yaatra_Elastic-Search
+    volumes:
+      - 'esdata:/usr/share/elasticsearch/data/'
+    ports:
+      - "9200:9200"
+  kibana:
+    labels:
+      com.example.service: "kibana"
+    image: kibana:5.4.3
+    container_name: yaatra_Kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_URL=http://es:9200
+    depends_on:
+      - es
+  logstash:
+    labels:
+      com.example.service: "logstash"
+    image: logstash:5.4.3
+    container_name: yaatra_Logstash
+    volumes:
+      - ./:/logstash_dir
+    command: logstash -f /logstash_dir/logstash.conf
+    depends_on:
+    - es
+    ports:
+      - "5959:5959"
+  db-master:
+    image: 'bitnami/postgresql:latest'
+    container_name: yaatra_Master-Database
+    ports:
+      - '5432'
+    volumes:
+      - 'db_master_data:/bitnami/postgresql'
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=master
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_password
+      - POSTGRESQL_USERNAME=ase
+      - POSTGRESQL_PASSWORD=ase
+      - POSTGRESQL_DATABASE=ase
+  db-slave:
+    image: 'bitnami/postgresql:latest'
+    container_name: yaatra_Replica_Database
+    ports:
+      - '5432'
+    volumes:
+      - 'db_slave_data:/bitnami/postgresql'
+    depends_on:
+      - db-master
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=slave
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_password
+      - POSTGRESQL_MASTER_HOST=db-master
+      - POSTGRESQL_PASSWORD=ase
+      - POSTGRESQL_MASTER_PORT_NUMBER=5432
+  application:
+    build: .
+    restart: always
+    hostname: yaatra_application
+    command: sh -c "python manage.py migrate && gunicorn yaatra.wsgi:application -w 2 -b 0.0.0.0:8000"
+    volumes:
+      - .:/yaatra
+    expose:
+      - "8000"
+    depends_on:
+      - db-master
+      - db-slave
+      - es
+      - kibana
+    environment:
+      - LOGSTASH_HOST=logstash
+    logging:
+      driver: "json-file"
+  backend-admin:
+    build: .
+    container_name: yaatra_application-admin
+    restart: always
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:9595"
+    volumes:
+      - .:/yaatra
+    ports:
+      - "9595:9595"
+    depends_on:
+      - db-master
+      - db-slave
+  nginx:
+    build: ./nginx
+    container_name: yatraa_Load-balancer
+    depends_on:
+      - application
+    ports:
+      - "4000:4000"
+volumes:
+  db_master_data:
+  db_slave_data:
+  esdata:
