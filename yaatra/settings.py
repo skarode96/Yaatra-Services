@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'daily_commute',
     'health_check',
+    'health_check.db',
+    'health_check.cache',
+    'health_check.storage',
     'user'
 ]
 
